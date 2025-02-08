@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Header(){
   return (
@@ -30,14 +31,10 @@ export default function Header(){
             >
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="index.html">
-                    Home
-                  </a>
+                 <Link className='nav-link' to='/'>Home</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="about.html">
-                    About
-                  </a>
+                  <Link className='nav-link' to='/about'>About</Link>
                 </li>
                 <li className="nav-item dropdown">
                   <a
