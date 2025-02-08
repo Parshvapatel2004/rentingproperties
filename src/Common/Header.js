@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Header(){
+export default function Header() {
   return (
     <>
       <section className="w3l-bootstrap-header">
@@ -31,10 +31,14 @@ export default function Header(){
             >
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                 <Link className='nav-link' to='/'>Home</Link>
+                  <Link className="nav-link" to="/">
+                    Home
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className='nav-link' to='/about'>About</Link>
+                  <Link className="nav-link" to="/about">
+                    About
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
                   <a
@@ -52,45 +56,39 @@ export default function Header(){
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"
                   >
-                    <a className="dropdown-item" href="services.html">
+                    <Link className="dropdown-item" to="/service">
                       Services
-                    </a>
-                    <a className="dropdown-item" href="properties.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/properties">
                       Properties
-                    </a>
-                    <a className="dropdown-item" href="properties-single.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/propertiessingle">
                       Properties Single
-                    </a>
-                    <a className="dropdown-item" href="agent-single.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/agentsingle">
                       Agent Single
-                    </a>
-                    <a className="dropdown-item" href="login.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/login">
                       Login
-                    </a>
-                    <a className="dropdown-item" href="signup.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/signup">
                       Sign Up
-                    </a>
-                    <a className="dropdown-item" href="timeline.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/timeline">
                       Timeline
-                    </a>
-                    <a className="dropdown-item" href="faq.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/faq">
                       Faq
-                    </a>
-                    <a className="dropdown-item" href="404.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/*">
                       404
-                    </a>
-                    <a className="dropdown-item" href="coming-soon.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/comingsoon">
                       Coming Soon
-                    </a>
-                    <a className="dropdown-item" href="email-template.html">
-                      Email Template
-                    </a>
-                    <a className="dropdown-item" href="single.html">
-                      Single Page
-                    </a>
-                    <a className="dropdown-item" href="search-results.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/searchresult">
                       Search Results
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li className="nav-item dropdown">
@@ -109,12 +107,12 @@ export default function Header(){
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"
                   >
-                    <a className="dropdown-item" href="blog.html">
+                    <Link className="dropdown-item" to="/blog">
                       Blog
-                    </a>
-                    <a className="dropdown-item" href="blog-single.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/blogsingle">
                       Blog Single
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li className="nav-item dropdown">
@@ -133,27 +131,27 @@ export default function Header(){
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"
                   >
-                    <a className="dropdown-item" href="ecommerce.html">
+                    <Link className="dropdown-item" to="/ecommerce">
                       Shop
-                    </a>
-                    <a className="dropdown-item" href="ecommerce-single.html">
+                    </Link>
+                    <Link className="dropdown-item" to="/ecommercesingle">
                       Shop Single
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="contact.html">
+                  <Link className="nav-link" to="/contact">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <form className="form-inline">
-                <a
+                <Link
                   className="btn btn-secondary btn-theme"
-                  href="find-property.html"
+                  to="/findproperty"
                 >
                   <span className="fa fa-search" /> Find Property
-                </a>
+                </Link>
               </form>
             </div>
           </div>
@@ -162,10 +160,3 @@ export default function Header(){
     </>
   );
 }
-
-
-
-
-
-
-

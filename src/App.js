@@ -31,35 +31,24 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Service />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          
-          
-
+          <Route path="/ecommerce" element={<Ecommerce />} />
+          <Route path="/ecommercesingle" element={<Ecommercesingle />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/properties" element={<Properties />} />
+          <Route path="/propertiessingle" element={<PropertiesSingle />} />
+          <Route path="/findproperty" element={<FindProperty />} />
+          <Route path="/agentsingle" element={<AgentSingle />} />
+          <Route path="/searchresult" element={<SearchResult />} />
+          <Route path="/timeline" element={<Timeline />} />
+          <Route path="/comingsoon" element={<Timeline />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogsingle" element={<Blogsingle />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/*" element={<Notfound />} />
         </Routes>
       </BrowserRouter>
-
-      {/* <Contact />
-
-      <Notfound />
-      <Ecommerce />
-      <Blog />
-      <Login />
-      <Blogsingle />
-      <SignUp />
-      <Properties />
-      <PropertiesSingle />
-      <AgentSingle />
-      <Ecommercesingle />
-      <Faq />
-      <FindProperty />
-      <SearchResult />
-      <Timeline />
-      <Commingsoon /> */}
     </>
   );
 }
