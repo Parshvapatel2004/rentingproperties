@@ -10,7 +10,7 @@ const Ecommerce = () => {
       <Banner />
       <EcommerceMain/>
       <Footer/>
-    </div>
+    </div> 
   );
 };
 function EcommerceMain() {
