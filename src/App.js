@@ -17,6 +17,7 @@ import PropertiesSingle from './Pages/PropertiesSingle';
 import AgentSingle from './Pages/AgentSingle';
 import Ecommercesingle from './Pages/Ecommercedsingle';
 import Faq from './Pages/Faq';
+import FindProperty from './Pages/FindProperty';
 
 function App() {
   return (
@@ -36,7 +37,8 @@ function App() {
     {/* <PropertiesSingle/> */}
     {/* <AgentSingle/> */}
     {/* <Ecommercesingle/> */}
-    <Faq/>
+    {/* <Faq/> */}
+    {/* <FindProperty/> */}
 
     
     </>
