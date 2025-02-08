@@ -10,7 +10,7 @@ const Banner = () => {
         <h3>About</h3>
         <li>
           <a href="index.html">
-            <span className="fa fa-home" aria-hidden="true" />{'{'}" "{'}'}
+            <span className="fa fa-home" aria-hidden="true" />
             <span className="fa fa-angle-double-right" aria-hidden="true" />
           </a>
         </li>

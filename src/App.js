@@ -18,6 +18,8 @@ import AgentSingle from './Pages/AgentSingle';
 import Ecommercesingle from './Pages/Ecommercedsingle';
 import Faq from './Pages/Faq';
 import FindProperty from './Pages/FindProperty';
+import SearchResult from './Pages/SearchResult';
+import Timeline from './Pages/Timeline';
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
     {/* <Ecommercesingle/> */}
     {/* <Faq/> */}
     {/* <FindProperty/> */}
+    {/* <SearchResult/> */}
+    <Timeline/>
 
     
     </>
