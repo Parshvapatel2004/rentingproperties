@@ -8,11 +8,11 @@ const Service = () => {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner heading={"Services"} pagename={"Services"} />
       <ServiceIndex />
-      <ServiceFeature/>
-      <ServiceContent/>
-      <Footer/>
+      <ServiceFeature />
+      <ServiceContent />
+      <Footer />
     </div>
   );
 };

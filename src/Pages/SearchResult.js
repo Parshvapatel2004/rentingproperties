@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 const SearchResult = () => {
   return (
     <div>
-      <Header/>
-      <Banner/>
-      <SearchResultMain/>
-      <Footer/>
+      <Header />
+      <Banner heading={"Search Results"} pagename={"Search Results"} />
+      <SearchResultMain />
+      <Footer />
     </div>
-  )
+  );
 }
 function SearchResultMain(){
     return(<>

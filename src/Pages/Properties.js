@@ -8,9 +8,9 @@ const Properties = () => {
   return (
     <div>
       <Header />
-      <Banner />
-      <PropertiesMain/>
-      <Footer/>
+      <Banner heading={"Properties"} pagename={"Properties"} />
+      <PropertiesMain />
+      <Footer />
     </div>
   );
 };

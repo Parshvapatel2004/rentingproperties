@@ -8,7 +8,7 @@ const PropertiesSingle = () => {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner heading={"Properties Single"} pagename={"Properties Single"} />
       <PropertiesMain />
       <Footer />
     </div>

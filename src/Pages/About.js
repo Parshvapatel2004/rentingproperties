@@ -8,11 +8,11 @@ const About = () => {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner heading={"About Us"} pagename={"About"}  />
       <Aboutindex />
       <AboutGrid />
-      <AboutTeam/>
-      <Footer/>
+      <AboutTeam />
+      <Footer />
     </div>
   );
 };

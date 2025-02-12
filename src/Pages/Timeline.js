@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 const Timeline = () => {
   return (
     <div>
-      <Header/>
-      <Banner/>
-      <TimelineMain/>
-      <Footer/>
+      <Header />
+      <Banner heading={"Timeline"} pagename={"Timeline"} />
+      <TimelineMain />
+      <Footer />
     </div>
-  )
+  );
 }
 
 function TimelineMain(){

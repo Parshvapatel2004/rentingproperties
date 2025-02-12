@@ -8,7 +8,7 @@ const Blog = () => {
   return (
     <div>
       <Header/>
-      <Banner/>
+      <Banner heading={"Blog"} pagename={"Blog"}/>
       <Blogbody/>
       <Footer/>
     </div>
