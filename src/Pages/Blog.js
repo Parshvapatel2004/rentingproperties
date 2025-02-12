@@ -21,118 +21,118 @@ function Blogbody(){
     <div className="container py-md-3">
       <div className="row">
         <div className="grids10-info col-lg-4 col-md-6">
-          <a href="blog-single.html"><img src="assets/images/g9.jpg" alt /></a>
+          <Link to="/blog-single"><img src="assets/images/g9.jpg" alt /></Link>
           <div className="blog-info">
             <ul>
-              <li><a href="#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</a></li>
-              <li><a href="#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</a></li>
+              <li><Link to="/#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</Link></li>
+              <li><Link to="/#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</Link></li>
             </ul>
-            <h4><a href="blog-single.html">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </a></h4>
+            <h4><Link to="/blog-single">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </Link></h4>
           </div>
         </div>
         <div className="grids10-info col-lg-4 col-md-6 mt-md-0 mt-5">
-          <a href="blog-single.html"><img src="assets/images/g8.jpg" alt /></a>
+          <Link to="/blog-single"><img src="assets/images/g8.jpg" alt /></Link>
           <div className="blog-info">
             <ul>
-              <li><a href="#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</a></li>
-              <li><a href="#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</a></li>
+              <li><Link to="/#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</Link></li>
+              <li><Link to="/#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</Link></li>
             </ul>
-            <h4><a href="blog-single.html">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </a></h4>
+            <h4><Link to="/blog-single">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </Link></h4>
           </div>
         </div>
         <div className="grids10-info col-lg-4 col-md-6 mt-lg-0 mt-5">
-          <a href="blog-single.html"><img src="assets/images/g7.jpg" alt /></a>
+          <Link to="/blog-single"><img src="assets/images/g7.jpg" alt /></Link>
           <div className="blog-info">
             <ul>
-              <li><a href="#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</a></li>
-              <li><a href="#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</a></li>
+              <li><Link to="/#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</Link></li>
+              <li><Link to="/#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</Link></li>
             </ul>
-            <h4><a href="blog-single.html">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </a></h4>
+            <h4><Link to="/blog-single">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </Link></h4>
           </div>
         </div>
         <div className="grids10-info col-lg-4 col-md-6 mt-5">
-          <a href="blog-single.html"><img src="assets/images/g6.jpg" alt /></a>
+          <Link to="/blog-single"><img src="assets/images/g6.jpg" alt /></Link>
           <div className="blog-info">
             <ul>
-              <li><a href="#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</a></li>
-              <li><a href="#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</a></li>
+              <li><Link to="/#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</Link></li>
+              <li><Link to="/#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</Link></li>
             </ul>
-            <h4><a href="blog-single.html">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </a></h4>
+            <h4><Link to="/blog-single">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </Link></h4>
           </div>
         </div>
         <div className="grids10-info col-lg-4 col-md-6 mt-5">
-          <a href="blog-single.html"><img src="assets/images/g5.jpg" alt /></a>
+          <Link to="/blog-single"><img src="assets/images/g5.jpg" alt /></Link>
           <div className="blog-info">
             <ul>
-              <li><a href="#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</a></li>
-              <li><a href="#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</a></li>
+              <li><Link to="/#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</Link></li>
+              <li><Link to="/#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</Link></li>
             </ul>
-            <h4><a href="blog-single.html">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </a></h4>
+            <h4><Link to="/blog-single">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </Link></h4>
           </div>
         </div>
         <div className="grids10-info col-lg-4 col-md-6 mt-5">
-          <a href="blog-single.html"><img src="assets/images/g4.jpg" alt /></a>
+          <Link to="/blog-single"><img src="assets/images/g4.jpg" alt /></Link>
           <div className="blog-info">
             <ul>
-              <li><a href="#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</a></li>
-              <li><a href="#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</a></li>
+              <li><Link to="/#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</Link></li>
+              <li><Link to="/#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</Link></li>
             </ul>
-            <h4><a href="blog-single.html">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </a></h4>
+            <h4><Link to="/blog-single">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </Link></h4>
           </div>
         </div>
         <div className="grids10-info col-lg-4 col-md-6 mt-5">
-          <a href="blog-single.html"><img src="assets/images/g3.jpg" alt /></a>
+          <Link to="/blog-single"><img src="assets/images/g3.jpg" alt /></Link>
           <div className="blog-info">
             <ul>
-              <li><a href="#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</a></li>
-              <li><a href="#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</a></li>
+              <li><Link to="/#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</Link></li>
+              <li><Link to="/#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</Link></li>
             </ul>
-            <h4><a href="blog-single.html">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </a></h4>
+            <h4><Link to="/blog-single">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </Link></h4>
           </div>
         </div>
         <div className="grids10-info col-lg-4 col-md-6 mt-5">
-          <a href="blog-single.html"><img src="assets/images/g2.jpg" alt /></a>
+          <Link to="/blog-single"><img src="assets/images/g2.jpg" alt /></Link>
           <div className="blog-info">
             <ul>
-              <li><a href="#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</a></li>
-              <li><a href="#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</a></li>
+              <li><Link to="/#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</Link></li>
+              <li><Link to="/#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</Link></li>
             </ul>
-            <h4><a href="blog-single.html">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </a></h4>
+            <h4><Link to="/blog-single">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </Link></h4>
           </div>
         </div>
         <div className="grids10-info col-lg-4 col-md-6 mt-5">
-          <a href="blog-single.html"><img src="assets/images/g1.jpg" alt /></a>
+          <Link to="/blog-single"><img src="assets/images/g1.jpg" alt /></Link>
           <div className="blog-info">
             <ul>
-              <li><a href="#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</a></li>
-              <li><a href="#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</a></li>
+              <li><Link to="/#"><span className="fa fa-calendar-o" aria-hidden="true" /> November 25,2019</Link></li>
+              <li><Link to="/#"><span className="fa fa-comments-o" aria-hidden="true" /> 15</Link></li>
             </ul>
-            <h4><a href="blog-single.html">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </a></h4>
+            <h4><Link to="/blog-single">Donec sed tempus enim, a congue risus. Pellentesque euismod massa </Link></h4>
           </div>
         </div>
       </div>
       <div className="pagination">
         <ul>
-          <li> <a href="#none" className="not-allowed" disabled>
+          <li> <Link to="/#none" className="not-allowed" disabled>
               <span className="fa fa-angle-double-left" aria-hidden="true" />
-            </a>
+            </Link>
           </li>
-          <li><a className="active" href="#page">1</a></li>
+          <li><Link className="active" to="/#page">1</Link></li>
           <li>
-            <a href="#page">2</a>
-          </li>
-          <li>
-            <a href="#page">3</a>
+            <Link to="/#page">2</Link>
           </li>
           <li>
-            <a href="#page">4</a>
+            <Link to="/#page">3</Link>
           </li>
           <li>
-            <a href="#page">5</a>
+            <Link to="/#page">4</Link>
           </li>
           <li>
-            <a href="#page"><span className="fa fa-angle-double-right" aria-hidden="true" />
-            </a>
+            <Link to="/#page">5</Link>
+          </li>
+          <li>
+            <Link to="/#page"><span className="fa fa-angle-double-right" aria-hidden="true" />
+            </Link>
           </li>
         </ul>
       </div>

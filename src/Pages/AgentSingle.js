@@ -8,7 +8,7 @@ const AgentSingle = () => {
     <div>
       <Header />
       <Banner />
-      <AgentSingleMain/>
+      <LinkgentSingleMain/>
       <Footer/>
     </div>
   );
@@ -36,14 +36,14 @@ function AgentSingleMain() {
                       <div className="cont-right">
                         <h6>Phone Number</h6>
                         <p>
-                          <a href="tel:+142 5897555">+142 5897555</a>
+                          <Link to="/tel:+142 5897555">+142 5897555</Link>
                         </p>
                       </div>
                       <div className="cont-right">
                         <h6>Email Address</h6>
                         <p>
-                          <a
-                            href="https://p.w3layouts.com/cdn-cgi/l/email-protection#b9dad6cbc9d6cbd8cddc94d4d8d0d5f9caccc9c9d6cbcd97dad6d4"
+                          <Link
+                            to="/https://p.w3layouts.com/cdn-cgi/l/email-protection#b9dad6cbc9d6cbd8cddc94d4d8d0d5f9caccc9c9d6cbcd97dad6d4"
                             className="mail"
                           >
                             <span
@@ -52,43 +52,43 @@ function AgentSingleMain() {
                             >
                               [email&nbsp;protected]
                             </span>
-                          </a>
+                          </Link>
                         </p>
                       </div>
                       <div className="cont-right">
                         <h6>Follow me:</h6>
                         <ul className="follow">
                           <li>
-                            <a href="#team">
+                            <Link to="/#team">
                               <span
                                 className="fa fa-facebook"
                                 aria-hidden="true"
                               />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#team">
+                            <Link to="/#team">
                               <span
                                 className="fa fa-twitter"
                                 aria-hidden="true"
                               />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#team">
+                            <Link to="/#team">
                               <span
                                 className="fa fa-instagram"
                                 aria-hidden="true"
                               />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#team">
+                            <Link to="/#team">
                               <span
                                 className="fa fa-google-plus"
                                 aria-hidden="true"
                               />
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>

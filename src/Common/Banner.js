@@ -9,10 +9,10 @@ const Banner = () => {
       <ul className="breadcrumbs-custom-path">
         <h3>About</h3>
         <li>
-          <a href="index.html">
+          <Link to="/index">
             <span className="fa fa-home" aria-hidden="true" />
             <span className="fa fa-angle-double-right" aria-hidden="true" />
-          </a>
+          </Link>
         </li>
         <li className="active">About</li>
       </ul>

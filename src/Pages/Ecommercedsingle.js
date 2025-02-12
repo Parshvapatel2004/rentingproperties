@@ -138,9 +138,9 @@ function EcommerceMain() {
                   </ul>
                 </div>
                 <div className="buttons">
-                  <a href="agent-single.html" className="actionbg">
+                  <Link to="/agent-single" className="actionbg">
                     Contact Agent
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -32,7 +32,7 @@ function EcommerceMain() {
               <div className="products-right row">
                 <div className="product-grid2 col-md-6">
                   <div className="product-image2">
-                    <a href="ecommerce-single.html">
+                    <Link to="/ecommerce-single">
                       <img
                         className="pic-1 img-responsive"
                         src="assets/images/g1.jpg"
@@ -41,29 +41,29 @@ function EcommerceMain() {
                         className="pic-2 img-responsive"
                         src="assets/images/g1.jpg"
                       />
-                    </a>
+                    </Link>
                     <ul className="social">
                       <li>
-                        <a href="ecommerce-single.html" data-tip="Quick View">
+                        <Link to="/ecommerce-single" data-tip="Quick View">
                           <span className="fa fa-eye" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="crt"
-                          href="ecommerce-single.html"
+                          to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
                           <span className="fa fa-shopping-cart" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="product-content">
                     <h3 className="title">
-                      <a href="ecommerce-single.html">
+                      <Link to="/ecommerce-single">
                         345 HUBER AVENUE, Williamstown, NJ
-                      </a>
+                      </Link>
                     </h3>
                     <ul>
                       <li>
@@ -81,7 +81,7 @@ function EcommerceMain() {
                 </div>
                 <div className="product-grid2 col-md-6 mt-5 mt-md-0">
                   <div className="product-image2">
-                    <a href="ecommerce-single.html">
+                    <Link to="/ecommerce-single">
                       <img
                         className="pic-1 img-responsive"
                         src="assets/images/g2.jpg"
@@ -90,30 +90,30 @@ function EcommerceMain() {
                         className="pic-2 img-responsive"
                         src="assets/images/g2.jpg"
                       />
-                    </a>
+                    </Link>
                     <ul className="social">
                       <li>
-                        <a href="ecommerce-single.html" data-tip="Quick View">
+                        <Link to="/ecommerce-single" data-tip="Quick View">
                           <span className="fa fa-eye" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="crt"
-                          href="ecommerce-single.html"
+                          to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
                           <span className="fa fa-shopping-cart" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="product-content">
                     <h3 className="title">
-                      <a href="ecommerce-single.html">
+                      <Link to="/ecommerce-single">
                         {" "}
                         1840 FRONTAGE RD #1707, Cherry Hill, NJ
-                      </a>
+                      </Link>
                     </h3>
                     <ul>
                       <li>
@@ -131,7 +131,7 @@ function EcommerceMain() {
                 </div>
                 <div className="product-grid2 col-md-6 mt-5">
                   <div className="product-image2">
-                    <a href="ecommerce-single.html">
+                    <Link to="/ecommerce-single">
                       <img
                         className="pic-1 img-responsive"
                         src="assets/images/g3.jpg"
@@ -140,30 +140,30 @@ function EcommerceMain() {
                         className="pic-2 img-responsive"
                         src="assets/images/g3.jpg"
                       />
-                    </a>
+                    </Link>
                     <ul className="social">
                       <li>
-                        <a href="ecommerce-single.html" data-tip="Quick View">
+                        <Link to="/ecommerce-single" data-tip="Quick View">
                           <span className="fa fa-eye" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="crt"
-                          href="ecommerce-single.html"
+                          to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
                           <span className="fa fa-shopping-cart" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="product-content">
                     <h3 className="title">
-                      <a href="ecommerce-single.html">
+                      <Link to="/ecommerce-single">
                         {" "}
                         6226 Lexington Avenue, Cherry Hill, NJ
-                      </a>
+                      </Link>
                     </h3>
                     <ul>
                       <li>
@@ -181,7 +181,7 @@ function EcommerceMain() {
                 </div>
                 <div className="product-grid2 col-md-6 mt-5">
                   <div className="product-image2">
-                    <a href="ecommerce-single.html">
+                    <Link to="/ecommerce-single">
                       <img
                         className="pic-1 img-responsive"
                         src="assets/images/g4.jpg"
@@ -190,30 +190,30 @@ function EcommerceMain() {
                         className="pic-2 img-responsive"
                         src="assets/images/g4.jpg"
                       />
-                    </a>
+                    </Link>
                     <ul className="social">
                       <li>
-                        <a href="ecommerce-single.html" data-tip="Quick View">
+                        <Link to="/ecommerce-single" data-tip="Quick View">
                           <span className="fa fa-eye" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="crt"
-                          href="ecommerce-single.html"
+                          to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
                           <span className="fa fa-shopping-cart" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="product-content">
                     <h3 className="title">
-                      <a href="ecommerce-single.html">
+                      <Link to="/ecommerce-single">
                         {" "}
                         1224 COOPER STREET, Woodbury, NJ
-                      </a>
+                      </Link>
                     </h3>
                     <ul>
                       <li>
@@ -231,7 +231,7 @@ function EcommerceMain() {
                 </div>
                 <div className="product-grid2 col-md-6 mt-5">
                   <div className="product-image2">
-                    <a href="ecommerce-single.html">
+                    <Link to="/ecommerce-single">
                       <img
                         className="pic-1 img-responsive"
                         src="assets/images/g5.jpg"
@@ -240,29 +240,29 @@ function EcommerceMain() {
                         className="pic-2 img-responsive"
                         src="assets/images/g5.jpg"
                       />
-                    </a>
+                    </Link>
                     <ul className="social">
                       <li>
-                        <a href="ecommerce-single.html" data-tip="Quick View">
+                        <Link to="/ecommerce-single" data-tip="Quick View">
                           <span className="fa fa-eye" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="crt"
-                          href="ecommerce-single.html"
+                          to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
                           <span className="fa fa-shopping-cart" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="product-content">
                     <h3 className="title">
-                      <a href="ecommerce-single.html">
+                      <Link to="/ecommerce-single">
                         432 9TH AVENUE, Lindenwold, NJ
-                      </a>
+                      </Link>
                     </h3>
                     <ul>
                       <li>
@@ -280,7 +280,7 @@ function EcommerceMain() {
                 </div>
                 <div className="product-grid2 col-md-6 mt-5">
                   <div className="product-image2">
-                    <a href="ecommerce-single.html">
+                    <Link to="/ecommerce-single">
                       <img
                         className="pic-1 img-responsive"
                         src="assets/images/g6.jpg"
@@ -289,29 +289,29 @@ function EcommerceMain() {
                         className="pic-2 img-responsive"
                         src="assets/images/g6.jpg"
                       />
-                    </a>
+                    </Link>
                     <ul className="social">
                       <li>
-                        <a href="ecommerce-single.html" data-tip="Quick View">
+                        <Link to="/ecommerce-single" data-tip="Quick View">
                           <span className="fa fa-eye" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="crt"
-                          href="ecommerce-single.html"
+                          to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
                           <span className="fa fa-shopping-cart" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="product-content">
                     <h3 className="title">
-                      <a href="ecommerce-single.html">
+                      <Link to="/ecommerce-single">
                         701 DEBRA DRIVE, Williamstown, NJ
-                      </a>
+                      </Link>
                     </h3>
                     <ul>
                       <li>
@@ -329,7 +329,7 @@ function EcommerceMain() {
                 </div>
                 <div className="product-grid2 col-md-6 mt-5">
                   <div className="product-image2">
-                    <a href="ecommerce-single.html">
+                    <Link to="/ecommerce-single">
                       <img
                         className="pic-1 img-responsive"
                         src="assets/images/g7.jpg"
@@ -338,29 +338,29 @@ function EcommerceMain() {
                         className="pic-2 img-responsive"
                         src="assets/images/g7.jpg"
                       />
-                    </a>
+                    </Link>
                     <ul className="social">
                       <li>
-                        <a href="ecommerce-single.html" data-tip="Quick View">
+                        <Link to="/ecommerce-single" data-tip="Quick View">
                           <span className="fa fa-eye" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="crt"
-                          href="ecommerce-single.html"
+                          to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
                           <span className="fa fa-shopping-cart" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="product-content">
                     <h3 className="title">
-                      <a href="ecommerce-single.html">
+                      <Link to="/ecommerce-single">
                         Residential Property for sale in 22A Cambridge Circle
-                      </a>
+                      </Link>
                     </h3>
                     <ul>
                       <li>
@@ -378,7 +378,7 @@ function EcommerceMain() {
                 </div>
                 <div className="product-grid2 col-md-6 mt-5">
                   <div className="product-image2">
-                    <a href="ecommerce-single.html">
+                    <Link to="/ecommerce-single">
                       <img
                         className="pic-1 img-responsive"
                         src="assets/images/g8.jpg"
@@ -387,30 +387,30 @@ function EcommerceMain() {
                         className="pic-2 img-responsive"
                         src="assets/images/g8.jpg"
                       />
-                    </a>
+                    </Link>
                     <ul className="social">
                       <li>
-                        <a href="ecommerce-single.html" data-tip="Quick View">
+                        <Link to="/ecommerce-single" data-tip="Quick View">
                           <span className="fa fa-eye" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="crt"
-                          href="ecommerce-single.html"
+                          to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
                           <span className="fa fa-shopping-cart" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className="product-content">
                     <h3 className="title">
-                      <a href="ecommerce-single.html">
+                      <Link to="/ecommerce-single">
                         {" "}
                         Residential Property for sale in 76E Dorchester
-                      </a>
+                      </Link>
                     </h3>
                     <ul>
                       <li>

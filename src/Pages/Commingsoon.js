@@ -40,9 +40,9 @@ const Commingsoon = () => {
                 <p className="form-text">Stay tuned for something amazing</p>
               </div>
               <div className="buy-tick">
-                <a href="index.html" className="back-button">
+                <Link to="/index" className="back-button">
                   Back to Home
-                </a>
+                </Link>
               </div>
             </div>
           </div>

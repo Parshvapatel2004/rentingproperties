@@ -15,9 +15,9 @@ const Notfound = () => {
                   This page you are looking for might have been removed
                   <br /> had its name changed or temporarly unavailable.
                 </p>
-                <a href="index.html" className="back-button">
+                <Link to="/index" className="back-button">
                   Back to Home
-                </a>
+                </Link>
               </div>
               <div className="right-cont col-md-6 mt-md-0 mt-5">
                 <img src="assets/images/error.png" alt className="img-fluid" />

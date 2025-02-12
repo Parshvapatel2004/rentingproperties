@@ -14,11 +14,11 @@ function Loginmain(){
   <div id="forms23-block">
     <div className="wrapper">
       <div className="logo1">
-        <a className="brand-logo" href="index.html"><span>E-</span>Property</a>
+        <Link className="brand-logo" to="/index"><span>E-</span>Property</Link>
         {/* if logo is image enable this   
-                  <a class="brand-logo" href="#index.html">
+                  <Link class="brand-logo" to="/#index">
                       <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-                  </a> */}
+                  </Link> */}
       </div>
       <div className="d-grid forms23-grids">
         <div className="form23">
@@ -26,39 +26,39 @@ function Loginmain(){
           <form action="#" method="GET">
             <input type="email" name="username" placeholder="Email" required="required" />
             <input type="password" name="password" placeholder="Password" required="required" />
-            <a href="#URL">Forgot your password?</a>
+            <Link to="/#URL">Forgot your password?</Link>
             <button type="submit">Login</button>
           </form>
-          <p>Not a member yet? <a href="signup.html">Register now</a></p>
+          <p>Not a member yet? <Link to="/signup">Register now</Link></p>
         </div>
         <div className="frm-tp">
           <div className="form23-text">
             <h6>Connect with</h6>
             <div className="form23-text-top">
-              <a href="#facebook">
+              <Link to="/#facebook">
                 <div className="signin facebook">
                   <span className="fa fa-facebook" aria-hidden="true" />
                   <p className="action">Facebook</p>
                 </div>
-              </a>
-              <a href="#google-plus">
+              </Link>
+              <Link to="/#google-plus">
                 <div className="signin google-plus">
                   <span className="fa fa-google-plus" aria-hidden="true" />
                   <p className="action">Google</p>
                 </div>
-              </a>
-              <a href="#twitter">
+              </Link>
+              <Link to="/#twitter">
                 <div className="signin twitter">
                   <span className="fa fa-twitter" aria-hidden="true" />
                   <p className="action">Twitter</p>
                 </div>
-              </a>
-              <a href="#linkedin">
+              </Link>
+              <Link to="/#linkedin">
                 <div className="signin linkedin">
                   <span className="fa fa-linkedin" aria-hidden="true" />
                   <p className="action">Linkedin</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

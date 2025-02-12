@@ -154,9 +154,9 @@ function Faqmain(){
             mauris erat.{'{'}" "{'}'}
           </p>
           <h4>
-            <a href="tel:+142 5897555">
+            <Link to="/tel:+142 5897555">
               <span className="fa fa-phone pr-2" /> +142 5897555
-            </a>
+            </Link>
           </h4>
         </div>
       </div>

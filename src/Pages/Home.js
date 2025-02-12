@@ -74,13 +74,13 @@ function Slider() {
                                 sq ft
                               </li>
                             </ul>
-                            <a
+                            <Link
                               className="btn btn-secondary btn-theme1"
-                              href="properties.html"
+                              to="/properties"
                             >
                               {" "}
                               Check Property
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -115,13 +115,13 @@ function Slider() {
                                 sq ft
                               </li>
                             </ul>
-                            <a
+                            <Link
                               className="btn btn-secondary btn-theme1"
-                              href="properties.html"
+                              to="/properties"
                             >
                               {" "}
                               Check Property
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -156,13 +156,13 @@ function Slider() {
                                 sq ft
                               </li>
                             </ul>
-                            <a
+                            <Link
                               className="btn btn-secondary btn-theme1"
-                              href="properties.html"
+                              to="/properties"
                             >
                               {" "}
                               Check Property
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -197,13 +197,13 @@ function Slider() {
                                 sq ft
                               </li>
                             </ul>
-                            <a
+                            <Link
                               className="btn btn-secondary btn-theme1"
-                              href="properties.html"
+                              to="/properties"
                             >
                               {" "}
                               Check Property
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -242,9 +242,9 @@ function Index() {
                   Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed
                   do i eiusmod tempor incididunt.
                 </p>
-                <a href="services.html">
+                <Link to="/services">
                   Read More <span className="fa fa-long-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 mt-sm-0 mt-4">
@@ -255,9 +255,9 @@ function Index() {
                   Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed
                   do i eiusmod tempor incididunt.
                 </p>
-                <a href="services.html">
+                <Link to="/services">
                   Read More <span className="fa fa-long-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 mt-lg-0 mt-4">
@@ -268,9 +268,9 @@ function Index() {
                   Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed
                   do i eiusmod tempor incididunt.
                 </p>
-                <a href="services.html">
+                <Link to="/services">
                   Read More <span className="fa fa-long-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 mt-4">
@@ -281,9 +281,9 @@ function Index() {
                   Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed
                   do i eiusmod tempor incididunt.
                 </p>
-                <a href="services.html">
+                <Link to="/services">
                   Read More <span className="fa fa-long-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 mt-4">
@@ -294,9 +294,9 @@ function Index() {
                   Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed
                   do i eiusmod tempor incididunt.
                 </p>
-                <a href="services.html">
+                <Link to="/services">
                   Read More <span className="fa fa-long-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 mt-4">
@@ -307,9 +307,9 @@ function Index() {
                   Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed
                   do i eiusmod tempor incididunt.
                 </p>
-                <a href="services.html">
+                <Link to="/services">
                   Read More <span className="fa fa-long-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -367,12 +367,12 @@ const Grids = () => {
             </div>
             <div className="row mt-5 pt-3">
               <div className="grids4-info  col-lg-4 col-md-6">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g12.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">84 Woodland St. Cocoa</a>
+                    <Link to="/properties-single">84 Woodland St. Cocoa</Link>
                   </h5>
                   <p>661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
                   <ul>
@@ -389,14 +389,14 @@ const Grids = () => {
                 </div>
               </div>
               <div className="grids4-info col-lg-4 col-md-6 mt-md-0 mt-4">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g11.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       28 Westport Dr. Warminster
-                    </a>
+                    </Link>
                   </h5>
                   <p>661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
                   <ul>
@@ -413,12 +413,12 @@ const Grids = () => {
                 </div>
               </div>
               <div className="grids4-info col-lg-4 col-md-6 mt-lg-0 mt-4">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g10.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">32 Pawnee Street Butte</a>
+                    <Link to="/properties-single">32 Pawnee Street Butte</Link>
                   </h5>
                   <p>661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
                   <ul>
@@ -435,14 +435,14 @@ const Grids = () => {
                 </div>
               </div>
               <div className="grids4-info  col-lg-4 col-md-6 mt-4">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g9.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       2 Glen Creek St. Alexandria
-                    </a>
+                    </Link>
                   </h5>
                   <p>661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
                   <ul>
@@ -459,14 +459,14 @@ const Grids = () => {
                 </div>
               </div>
               <div className="grids4-info  col-lg-4 col-md-6 mt-4">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g8.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       798 Talbot St. Bridgewater
-                    </a>
+                    </Link>
                   </h5>
                   <p>661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
                   <ul>
@@ -483,14 +483,14 @@ const Grids = () => {
                 </div>
               </div>
               <div className="grids4-info  col-lg-4 col-md-6 mt-4">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g7.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       7240C Argyle St. Lawndale
-                    </a>
+                    </Link>
                   </h5>
                   <p>661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
                   <ul>
@@ -527,13 +527,13 @@ const Customer = () => {
                   Common Sense Solutions For All Aspects Of Commercial Property,
                   Development Land.
                 </h4>
-                <a
-                  href="contact.html"
+                <Link
+                  to="/contact"
                   className="btn btn-secondary btn-theme1 mt-4"
                 >
                   {" "}
                   Contact Us
-                </a>
+                </Link>
               </div>
               <div className="customers-middle_sur col-lg-6 mt-lg-0 mt-4">
                 <div className="customers_grid">
@@ -594,12 +594,12 @@ const Gridese = () => {
                 <div className="left-grid-ele-9 grid-bg3">
                   <div className="sub-wid-grid-9">
                     <p className="mb-2">
-                      <a href="blog-single.html">December 17, 2019</a>
+                      <Link to="/blog-single">December 17, 2019</Link>
                     </p>
                     <h4 className="text-grid-9">
-                      <a href="blog-single.html">
+                      <Link to="/blog-single">
                         Retail banks wake up to digital lending this year
-                      </a>
+                      </Link>
                     </h4>
                   </div>
                 </div>
@@ -608,12 +608,12 @@ const Gridese = () => {
                 <div className="left-grid-ele-9 grid-bg4">
                   <div className="sub-wid-grid-9">
                     <p className="mb-2">
-                      <a href="blog-single.html">December 17, 2019</a>
+                      <Link to="/blog-single">December 17, 2019</Link>
                     </p>
                     <h4 className="text-grid-9">
-                      <a href="blog-single.html">
+                      <Link to="/blog-single">
                         Strategic and commercial approach with issues
-                      </a>
+                      </Link>
                     </h4>
                   </div>
                 </div>
@@ -622,12 +622,12 @@ const Gridese = () => {
                 <div className="left-grid-ele-9 grid-bg5">
                   <div className="sub-wid-grid-9">
                     <p className="mb-2">
-                      <a href="blog-single.html">December 17, 2019</a>
+                      <Link to="/blog-single">December 17, 2019</Link>
                     </p>
                     <h4 className="text-grid-9">
-                      <a href="blog-single.html">
+                      <Link to="/blog-single">
                         Within the construction industry as their overdraft
-                      </a>
+                      </Link>
                     </h4>
                   </div>
                 </div>

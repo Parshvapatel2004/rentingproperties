@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="row footer-top-28">
                 <div className="col-lg-6 footer-list-28">
                   <h2 className="footer-title-28">
-                    <a to="index.html"> Estate Property </a>
+                    <Link to="index"> Estate Property </Link>
                   </h2>
                   <p className="mt-4">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -22,24 +22,24 @@ const Footer = () => {
                   <div className="main-social-footer-28 mt-3">
                     <ul className="social-icons">
                       <li className="facebook">
-                        <a to="#link" title="Facebook">
+                        <Link to="#link" title="Facebook">
                           <span className="fa fa-facebook" aria-hidden="true" />
-                        </a>
+                        </Link>
                       </li>
                       <li className="twitter">
-                        <a to="#link" title="Twitter">
+                        <Link to="#link" title="Twitter">
                           <span className="fa fa-twitter" aria-hidden="true" />
-                        </a>
+                        </Link>
                       </li>
                       <li className="dribbble">
-                        <a to="#link" title="Dribbble">
+                        <Link to="#link" title="Dribbble">
                           <span className="fa fa-dribbble" aria-hidden="true" />
-                        </a>
+                        </Link>
                       </li>
                       <li className="google">
-                        <a to="#link" title="Google">
+                        <Link to="#link" title="Google">
                           <span className="fa fa-google" aria-hidden="true" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

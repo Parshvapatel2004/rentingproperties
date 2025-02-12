@@ -7,13 +7,13 @@ export default function Header() {
       <section className="w3l-bootstrap-header">
         <nav className="navbar navbar-expand-lg navbar-light py-lg-2 py-2">
           <div className="container">
-            <a className="navbar-brand" href="index.html">
+            <Link className="navbar-brand" to="/index">
               <span className>E-</span>Property
-            </a>
+            </Link>
             {/* if logo is image enable this   
-    <a class="navbar-brand" href="#index.html">
+    <Link class="navbar-brand" to="/#index">
   <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-    </a> */}
+    </Link> */}
             <button
               className="navbar-toggler"
               type="button"
@@ -41,9 +41,9 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
-                    href="#"
+                    to="/#"
                     id="navbarDropdown"
                     role="button"
                     data-toggle="dropdown"
@@ -51,7 +51,7 @@ export default function Header() {
                     aria-expanded="false"
                   >
                     Pages
-                  </a>
+                  </Link>
                   <div
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"
@@ -92,9 +92,9 @@ export default function Header() {
                   </div>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
-                    href="#"
+                    to="/#"
                     id="navbarDropdown"
                     role="button"
                     data-toggle="dropdown"
@@ -102,7 +102,7 @@ export default function Header() {
                     aria-expanded="false"
                   >
                     Blog
-                  </a>
+                  </Link>
                   <div
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"
@@ -116,9 +116,9 @@ export default function Header() {
                   </div>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
-                    href="#"
+                    to="/#"
                     id="navbarDropdown"
                     role="button"
                     data-toggle="dropdown"
@@ -126,7 +126,7 @@ export default function Header() {
                     aria-expanded="false"
                   >
                     Shop
-                  </a>
+                  </Link>
                   <div
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"

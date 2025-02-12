@@ -21,15 +21,15 @@ function PropertiesMain() {
           <div className="container py-md-3">
             <div className="row">
               <div className="grids3-info  col-lg-4 col-md-6">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g7.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <p>Rent</p>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       60 Thornley Street, Marrickville, NSW 2204
-                    </a>
+                    </Link>
                   </h5>
                   <ul>
                     <li>
@@ -45,15 +45,15 @@ function PropertiesMain() {
                 </div>
               </div>
               <div className="grids3-info col-lg-4 col-md-6 mt-md-0 mt-5">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g8.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <p>Rent</p>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       423/1 Phillip Street, Petersham, NSW 2049
-                    </a>
+                    </Link>
                   </h5>
                   <ul>
                     <li>
@@ -69,15 +69,15 @@ function PropertiesMain() {
                 </div>
               </div>
               <div className="grids3-info col-lg-4 col-md-6 mt-lg-0 mt-5">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g9.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <p>Rent</p>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       40 Piper Street, Lilyfield, NSW 2040
-                    </a>
+                    </Link>
                   </h5>
                   <ul>
                     <li>
@@ -93,15 +93,15 @@ function PropertiesMain() {
                 </div>
               </div>
               <div className="grids3-info  col-lg-4 col-md-6 mt-5">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g10.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <p>Rent</p>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       324 Piper Street hasan, NSW 2040
-                    </a>
+                    </Link>
                   </h5>
                   <ul>
                     <li>
@@ -117,15 +117,15 @@ function PropertiesMain() {
                 </div>
               </div>
               <div className="grids3-info  col-lg-4 col-md-6 mt-5">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g11.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <p>Rent</p>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       60 Thornley Street, Marrickville, NSW 2204
-                    </a>
+                    </Link>
                   </h5>
                   <ul>
                     <li>
@@ -141,15 +141,15 @@ function PropertiesMain() {
                 </div>
               </div>
               <div className="grids3-info  col-lg-4 col-md-6 mt-5">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g12.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <p>Rent</p>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       423/1 Phillip Street, Petersham, NSW 2049
-                    </a>
+                    </Link>
                   </h5>
                   <ul>
                     <li>
@@ -165,15 +165,15 @@ function PropertiesMain() {
                 </div>
               </div>
               <div className="grids3-info  col-lg-4 col-md-6 mt-5">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g13.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <p>Rent</p>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       324 Piper Street hasan, NSW 2040
-                    </a>
+                    </Link>
                   </h5>
                   <ul>
                     <li>
@@ -189,15 +189,15 @@ function PropertiesMain() {
                 </div>
               </div>
               <div className="grids3-info  col-lg-4 col-md-6 mt-5">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g14.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <p>Rent</p>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       60 Thornley Street, Marrickville, NSW 2204
-                    </a>
+                    </Link>
                   </h5>
                   <ul>
                     <li>
@@ -213,15 +213,15 @@ function PropertiesMain() {
                 </div>
               </div>
               <div className="grids3-info  col-lg-4 col-md-6 mt-5">
-                <a href="properties-single.html">
+                <Link to="/properties-single">
                   <img src="assets/images/g15.jpg" className="img-fluid" alt />
-                </a>
+                </Link>
                 <p>Rent</p>
                 <div className="info-bg">
                   <h5>
-                    <a href="properties-single.html">
+                    <Link to="/properties-single">
                       40 Piper Street, Lilyfield, NSW 2040
-                    </a>
+                    </Link>
                   </h5>
                   <ul>
                     <li>

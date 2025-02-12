@@ -27,21 +27,21 @@ function BlogsingleMain() {
               />
               <ul className="bl-single">
                 <li>
-                  <a href="#">
+                  <Link to="/#">
                     <span className="fa fa-calendar-o" aria-hidden="true" />{" "}
                     November 25,2019
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/#">
                     <span className="fa fa-comments-o" aria-hidden="true" /> 15
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/#">
                     <span className="fa fa-user" aria-hidden="true" />{" "}
                     Williamson
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <h4 className="heading"> Donec ipsum faucibus arcu elementum</h4>
@@ -70,7 +70,7 @@ function BlogsingleMain() {
                     />
                     <div className="media-body comments-grid-right">
                       <h4>
-                        <a href="#">Henry Nicholas</a>
+                        <Link to="/#">Henry Nicholas</Link>
                       </h4>
                       <ul className>
                         <li className>15 Oct 2019</li>
@@ -81,9 +81,9 @@ function BlogsingleMain() {
                         arcu interdum,Aliquam ac arcu interdum, dapibus nibh
                         convallis, semper augue.
                       </p>
-                      <a href="#comment" className="replay">
+                      <Link to="/#comment" className="replay">
                         <span className="fa fa-reply" /> Reply
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="media second-part">
@@ -94,7 +94,7 @@ function BlogsingleMain() {
                     />
                     <div className="media-body comments-grid-right">
                       <h4>
-                        <a href="#">Shane Jessey</a>
+                        <Link to="/#">Shane Jessey</Link>
                       </h4>
                       <ul className>
                         <li className>20 Oct 2019</li>
@@ -105,9 +105,9 @@ function BlogsingleMain() {
                         arcu interdum,Aliquam ac arcu interdum, dapibus nibh
                         convallis, semper augue.
                       </p>
-                      <a href="#comment" className="replay">
+                      <Link to="/#comment" className="replay">
                         <span className="fa fa-reply" /> Reply
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="media third-part">
@@ -118,7 +118,7 @@ function BlogsingleMain() {
                     />
                     <div className="media-body comments-grid-right">
                       <h4>
-                        <a href="#">John Cena</a>
+                        <Link to="/#">John Cena</Link>
                       </h4>
                       <ul className>
                         <li className>25 Oct 2019</li>
@@ -129,9 +129,9 @@ function BlogsingleMain() {
                         arcu interdum,Aliquam ac arcu interdum, dapibus nibh
                         convallis, semper augue.
                       </p>
-                      <a href="#comment" className="replay">
+                      <Link to="/#comment" className="replay">
                         <span className="fa fa-reply" /> Reply
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -169,9 +169,9 @@ function BlogsingleMain() {
                     />
                   </div>
                   <div className="submit text-right">
-                    <a href="#" className="actionbg">
+                    <Link to="/#" className="actionbg">
                       Post comment
-                    </a>
+                    </Link>
                   </div>
                 </form>
               </div>

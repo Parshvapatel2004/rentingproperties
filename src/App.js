@@ -29,7 +29,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<Linkbout />} />
           <Route path="/services" element={<Service />} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/ecommercesingle" element={<Ecommercesingle />} />
@@ -37,7 +37,7 @@ function App() {
           <Route path="/properties" element={<Properties />} />
           <Route path="/propertiessingle" element={<PropertiesSingle />} />
           <Route path="/findproperty" element={<FindProperty />} />
-          <Route path="/agentsingle" element={<AgentSingle />} />
+          <Route path="/agentsingle" element={<LinkgentSingle />} />
           <Route path="/searchresult" element={<SearchResult />} />
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/comingsoon" element={<Timeline />} />

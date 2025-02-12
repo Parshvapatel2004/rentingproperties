@@ -73,9 +73,9 @@ function ServiceIndex() {
                   molestias nam officiis repellat. Sequi corrupti reiciendis
                   nostrum.
                 </p>
-                <a href="about.html" className="theme-button btn">
+                <Link to="/about" className="theme-button btn">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -109,18 +109,18 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <a href="properties.html">
+                    <Link to="/properties">
                       Flexible, Contemporary &amp; Included Spaces
-                    </a>
+                    </Link>
                   </h5>
                   <p>
                     {" "}
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <a href="properties.html" className="red mt-3">
+                  <Link to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="float-mid feature-gd col-lg-4 col-md-6 mt-md-0 mt-5">
@@ -130,18 +130,18 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <a href="properties.html">
+                    <Link to="/properties">
                       Dedicated Production &amp; Planning Teams
-                    </a>
+                    </Link>
                   </h5>
                   <p>
                     {" "}
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <a href="properties.html" className="red mt-3">
+                  <Link to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="float-rt feature-gd col-lg-4 col-md-6 mt-lg-0 mt-5">
@@ -151,18 +151,18 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <a href="properties.html">
+                    <Link to="/properties">
                       Premium, Fresh Cuisine Made Onsite
-                    </a>
+                    </Link>
                   </h5>
                   <p>
                     {" "}
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <a href="properties.html" className="red mt-3">
+                  <Link to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="float-lt feature-gd col-lg-4 col-md-6 mt-5">
@@ -172,18 +172,18 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <a href="properties.html">
+                    <Link to="/properties">
                       We’re Here To Make You Successful
-                    </a>
+                    </Link>
                   </h5>
                   <p>
                     {" "}
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <a href="properties.html" className="red mt-3">
+                  <Link to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="float-mid feature-gd col-lg-4 col-md-6 mt-5">
@@ -193,18 +193,18 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <a href="properties.html">
+                    <Link to="/properties">
                       Broker Cutting-Edge And Technology
-                    </a>
+                    </Link>
                   </h5>
                   <p>
                     {" "}
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <a href="properties.html" className="red mt-3">
+                  <Link to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="float-rt feature-gd col-lg-4 col-md-6 mt-5">
@@ -214,18 +214,18 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <a href="properties.html">
+                    <Link to="/properties">
                       Human-Centered Design Friendly Spaces
-                    </a>
+                    </Link>
                   </h5>
                   <p>
                     {" "}
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <a href="properties.html" className="red mt-3">
+                  <Link to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

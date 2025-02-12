@@ -24,7 +24,7 @@ function FindPropertyMain() {
                      <div class="form-right-inf"> 
                          <div class="form-inner-cont">
                            <h3>Find your next perfect place</h3> 
-                             <form action="https://p.w3layouts.com/demosWTR/Freedom/12-02-2020/estate_property-freedom-demo_Free/200993729/web/search-results.html" method="post" class="signin-form">	
+                             <form action="https://p.w3layouts.com/demosWTR/Freedom/12-02-2020/estate_property-freedom-demo_Free/200993729/web/search-results" method="post" class="signin-form">	
                                  <div  class="row book-form">
                                      <div  class="form-input col-lg-8 col-md-6">
                                          <input type="text" name="" placeholder="Enter Your Keywords..." required />
