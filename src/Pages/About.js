@@ -2,15 +2,16 @@ import React from "react";
 import Header from "../Common/Header";
 import Banner from "../Common/Banner";
 import Footer from "../Common/Footer";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <div>
       <Header />
       <Banner />
-      <Linkboutindex />
-      <LinkboutGrid />
-      <LinkboutTeam/>
+      <Aboutindex />
+      <AboutGrid />
+      <AboutTeam/>
       <Footer/>
     </div>
   );

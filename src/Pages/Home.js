@@ -5,7 +5,7 @@ import "swiper/css/pagination"; // Optional: Pagination dots
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Header from "../Common/Header";
 import Footer from "../Common/Footer";
-
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
