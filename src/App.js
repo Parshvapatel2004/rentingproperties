@@ -40,7 +40,7 @@ function App() {
           <Route path="/agentsingle" element={<AgentSingle />} />
           <Route path="/searchresult" element={<SearchResult />} />
           <Route path="/timeline" element={<Timeline />} />
-          <Route path="/comingsoon" element={<Timeline />} />
+          <Route path="/comingsoon" element={<Commingsoon />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blogsingle" element={<Blogsingle />} />
           <Route path="/login" element={<Login />} />
