@@ -1,11 +1,13 @@
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
-
+  const [login, setlogin] = useState(true);
   // Handle Logout
   const handleLogout = () => {
     alert("You have been logged out!");
+    setlogin(false);
     navigate("/login"); // Redirect to login page
   };
 
@@ -119,32 +121,52 @@ const Header = () => {
                     height="30"
                   />
                 </button>
-                <ul
-                  className="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="profileDropdown"
-                >
-                  <li>
-                    <Link className="dropdown-item" to="/profile">
-                      View Profile
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/profile">
-                      Edit Profile
-                    </Link>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <button
-                      className="dropdown-item text-danger"
-                      onClick={handleLogout}
+                {login ? (
+                  <>
+                    <ul
+                      className="dropdown-menu dropdown-menu-end"
+                      aria-labelledby="profileDropdown"
                     >
-                      Logout
-                    </button>
-                  </li>
-                </ul>
+                      <li>
+                        <Link className="dropdown-item" to="/profile">
+                          View Profile
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="/profile">
+                          Edit Profile
+                        </Link>
+                      </li>
+                      <li>
+                        <hr className="dropdown-divider" />
+                      </li>
+                      <li>
+                        <button
+                          className="dropdown-item text-danger"
+                          onClick={handleLogout}
+                        >
+                          Logout
+                        </button>
+                      </li>
+                    </ul>
+                  </>
+                ) : (
+                  <>
+                    <ul
+                      className="dropdown-menu dropdown-menu-end"
+                      aria-labelledby="profileDropdown"
+                    >
+                      <li>
+                        <Link
+                          className="dropdown-item text-danger"
+                          to={"/login"}
+                        >
+                          login
+                        </Link>
+                      </li>
+                    </ul>
+                  </>
+                )}
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../Common/Header";
 import Footer from "../Common/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
   return (
@@ -64,6 +65,8 @@ function Main() {
     },
   ]);
 
+  const navigate = useNavigate();
+
   // Handle profile input change
   const handleProfileChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -88,6 +91,20 @@ function Main() {
   // Handle property save
   const handlePropertySave = (id) => {
     setIsEditingProperty(null);
+  };
+
+  // Handle property delete
+  const handleDeleteProperty = (id) => {
+    if (window.confirm("Are you sure you want to delete this property?")) {
+      const updatedProperties = properties.filter(
+        (property) => property.id !== id
+      );
+      setProperties(updatedProperties);
+    }
+  };
+  const handleLogout = () => {
+    alert("You have been Logged Out!");
+    navigate("/login");
   };
 
   return (
@@ -160,6 +177,9 @@ function Main() {
               onClick={() => setIsEditingProfile(true)}
             >
               Edit Profile
+            </button>
+            <button className="btn btn-danger mb-4 ms-2" onClick={handleLogout}>
+              Logout
             </button>
           </>
         )}
@@ -256,6 +276,12 @@ function Main() {
                         onClick={() => setIsEditingProperty(property.id)}
                       >
                         Edit Property
+                      </button>
+                      <button
+                        className="btn btn-danger"
+                        onClick={() => handleDeleteProperty(property.id)}
+                      >
+                        Delete
                       </button>
                     </>
                   )}
