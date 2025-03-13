@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="row footer-top-28">
                 <div className="col-lg-6 footer-list-28">
                   <h2 className="footer-title-28">
-                    <Link to="index"> Estate Property </Link>
+                    <Link to="index">Renting Properties</Link>
                   </h2>
                   <p className="mt-4">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -59,59 +59,9 @@ const Footer = () => {
                           <Link to="/services">Services</Link>
                         </li>
                         <li>
-                          <Link to="/blog">Blog</Link>
-                        </li>
-                        <li>
                           <Link to="/contact">Contact</Link>
                         </li>
                       </ul>
-                    </div>
-                    <div className="col-md-8 footer-list-28 mt-md-0 mt-4">
-                      <h6 className="footer-title-28">Recent Posts</h6>
-                      <div className="fot-top row mt-4">
-                        <div className="col-4">
-                          <Link to="/blogsingle">
-                            <img
-                              src="assets/images/g1.jpg"
-                              className="img-responsive"
-                              alt
-                            />
-                          </Link>
-                        </div>
-                        <div className="col-8 pl-2">
-                          <h5>
-                            <Link to="/blogsingle">
-                              We Are Leading International Consultiing Agency
-                            </Link>
-                          </h5>
-                          <p>
-                            <span className="fa fa-clock-o" /> December 17, 2019
-                          </p>
-                        </div>
-                      </div>
-                      <div className="fot-top row mt-4">
-                        <div className="col-4">
-                          <Link to="/blogsingle">
-                            <img
-                              src="assets/images/g2.jpg"
-                              className="img-responsive"
-                              alt
-                            />
-                          </Link>
-                        </div>
-                        <div className="col-8 pl-2">
-                          <h5>
-                            {" "}
-                            <Link to="/blogsingle">
-                              We Are Leading International Consultiing Agency
-                            </Link>
-                          </h5>
-                          <p>
-                            {" "}
-                            <span className="fa fa-clock-o" /> December 27, 2019
-                          </p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -120,18 +70,12 @@ const Footer = () => {
             <div className="midd-footer-28 text-center py-lg-4 py-3 mt-5">
               <div className="container">
                 <p className="copy-footer-28 text-center">
-                  © 2020 Estate Property. All Rights Reserved.Design by
+                  &copy; 2025 Estate Property. All Rights Reserved
                 </p>
               </div>
             </div>
           </div>
         </footer>
-        {/* move top */}
-        <button onclick="topFunction()" id="movetop" title="Go to top">
-          ⤴
-        </button>
-        {/* /move top */}
-        {/* //footer-28 block */}
       </section>
     </div>
   );

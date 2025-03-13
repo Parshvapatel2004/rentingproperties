@@ -15,7 +15,7 @@ function Loginmain(){
   <div id="forms23-block">
     <div className="wrapper">
       <div className="logo1">
-        <Link className="brand-logo" to="/index"><span>E-</span>Property</Link>
+        <Link className="brand-logo" to="/index"><span>Renting</span>Properties</Link>
         {/* if logo is image enable this   
                   <Link class="brand-logo" to="/#index">
                       <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />

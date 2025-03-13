@@ -1,12 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  // Handle Logout
+  const handleLogout = () => {
+    alert("You have been logged out!");
+    navigate("/login"); // Redirect to login page
+  };
+
   return (
     <section className="w3l-bootstrap-header">
       <nav className="navbar navbar-expand-lg navbar-light py-lg-2 py-2">
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            <span>E-</span>Property
+          <Link id="link" className="navbar-brand" to="/">
+            <span>Renting </span>Properties
           </Link>
 
           <button
@@ -23,21 +31,21 @@ const Header = () => {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul
-              className="navbar-nav me-auto ms-auto "
-              style={{ fontSize: "22px" }}
+              className="navbar-nav me-auto ms-auto"
+              style={{ fontSize: "20px" }}
             >
               <li className="nav-item active">
-                <Link className="nav-link" to="/">
+                <Link id="link" className="nav-link" to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link id="link" className="nav-link" to="/about">
                   About
                 </Link>
               </li>
 
-              {/* Bootstrap Dropdown (No Hooks) */}
+              {/* Properties Dropdown */}
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
@@ -47,79 +55,98 @@ const Header = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Pages
+                  Properties
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" to="/services">
-                      Services
+                    <Link id="link" className="dropdown-item" to="/properties">
+                      All Properties
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/properties">
-                      Properties
+                    <Link
+                      id="link"
+                      className="dropdown-item"
+                      to="/propertiessingle"
+                    >
+                      Single Property
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/propertiessingle">
-                      Properties Single
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/agentsingle">
-                      Agent Single
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/login">
-                      Login
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/signup">
-                      Sign Up
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/timeline">
-                      Timeline
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/faq">
+                    <Link id="link" className="dropdown-item" to="/faq">
                       FAQ
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/*">
-                      404
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/comingsoon">
-                      Coming Soon
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/searchresult">
-                      Search Results
                     </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <Link id="link" className="nav-link" to="/contact">
                   Contact
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link id="link" className="nav-link" to="/services">
+                  Services
                 </Link>
               </li>
             </ul>
 
-            <form className="form-inline">
-              <Link className="btn btn-secondary btn-theme" to="/find-property">
+            {/* Search & Profile Dropdown */}
+            <div className="d-flex align-items-center">
+              <Link
+                id="link"
+                className="btn btn-secondary me-3"
+                to="/find-property"
+              >
                 <span className="fa fa-search"></span> Find Property
               </Link>
-            </form>
+
+              {/* Profile Dropdown */}
+              <div className="dropdown">
+                <button
+                  className="btn btn-outline-dark dropdown-toggle"
+                  type="button"
+                  id="profileDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://www.w3schools.com/howto/img_avatar.png"
+                    alt="User Avatar"
+                    className="rounded-circle"
+                    width="30"
+                    height="30"
+                  />
+                </button>
+                <ul
+                  className="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="profileDropdown"
+                >
+                  <li>
+                    <Link className="dropdown-item" to="/profile">
+                      View Profile
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/profile">
+                      Edit Profile
+                    </Link>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <button
+                      className="dropdown-item text-danger"
+                      onClick={handleLogout}
+                    >
+                      Logout
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
