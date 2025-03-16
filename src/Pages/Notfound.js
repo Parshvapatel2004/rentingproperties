@@ -16,7 +16,7 @@ const Notfound = () => {
                   This page you are looking for might have been removed
                   <br /> had its name changed or temporarly unavailable.
                 </p>
-                <Link to="/" className="back-button">
+                <Link id="link" to="/" className="back-button">
                   Back to Home
                 </Link>
               </div>

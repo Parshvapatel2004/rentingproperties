@@ -8,7 +8,7 @@ const SignUp = () => {
         <div id="forms23-block">
           <div className="wrapper">
             <div className="logo1">
-              <Link className="brand-logo" to="/index">
+              <Link id="link" className="brand-logo" to="/index">
                 <span>Renting</span>Properties
               </Link>
               
@@ -38,20 +38,20 @@ const SignUp = () => {
                   <button type="submit">Sign Up</button>
                 </form>
                 <p>
-                  Are you a member? <Link to="/login">Login now</Link>
+                  Are you a member? <Link id="link" to="/login">Login now</Link>
                 </p>
               </div>
               <div className="frm-tp">
                 <div className="form23-text">
                   <h6>Connect with</h6>
                   <div className="form23-text-top">
-                    <Link to="/#facebook">
+                    <Link id="link" to="/#facebook">
                       <div className="signin facebook">
                         <span className="fa fa-facebook" aria-hidden="true" />
                         <p className="action">Facebook</p>
                       </div>
                     </Link>
-                    <Link to="/#google-plus">
+                    <Link id="link" to="/#google-plus">
                       <div className="signin google-plus">
                         <span
                           className="fa fa-google-plus"
@@ -60,13 +60,13 @@ const SignUp = () => {
                         <p className="action">Google</p>
                       </div>
                     </Link>
-                    <Link to="/#twitter">
+                    <Link id="link" to="/#twitter">
                       <div className="signin twitter">
                         <span className="fa fa-twitter" aria-hidden="true" />
                         <p className="action">Twitter</p>
                       </div>
                     </Link>
-                    <Link to="/#linkedin">
+                    <Link id="link" to="/#linkedin">
                       <div className="signin linkedin">
                         <span className="fa fa-linkedin" aria-hidden="true" />
                         <p className="action">Linkedin</p>

@@ -35,7 +35,7 @@ function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/properties" element={<Properties />} />
           <Route path="/propertiessingle" element={<PropertiesSingle />} />
-          <Route path="/findproperty" element={<FindProperty />} />
+          <Route path="/find-property" element={<FindProperty />} />
           <Route path="/searchresult" element={<SearchResult />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />

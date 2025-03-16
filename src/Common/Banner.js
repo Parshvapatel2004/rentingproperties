@@ -9,7 +9,7 @@ const Banner = (props) => {
       <ul className="breadcrumbs-custom-path">
         <h3>{props.heading}</h3>
         <li>
-          <Link to="/index">
+          <Link id="link" to="/index">
             <span className="fa fa-home" aria-hidden="true" />
             <span className="fa fa-angle-double-right" aria-hidden="true" />
           </Link>

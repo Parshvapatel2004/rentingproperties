@@ -13,9 +13,9 @@ const Header = () => {
 
   return (
     <section className="w3l-bootstrap-header">
-      <nav className="navbar navbar-expand-lg navbar-light py-lg-2 py-2">
+      <nav className="navbar navbar-expand-lg navbar-light  py-lg-2 py-2">
         <div className="container">
-          <Link id="link" className="navbar-brand" to="/">
+          <Link id="link" id="link" className="navbar-brand" to="/">
             <span>Renting </span>Properties
           </Link>
 
@@ -37,12 +37,12 @@ const Header = () => {
               style={{ fontSize: "20px" }}
             >
               <li className="nav-item active">
-                <Link id="link" className="nav-link" to="/">
+                <Link id="link" id="link" className="nav-link" to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link id="link" className="nav-link" to="/about">
+                <Link id="link" id="link" className="nav-link" to="/about">
                   About
                 </Link>
               </li>
@@ -61,12 +61,12 @@ const Header = () => {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link id="link" className="dropdown-item" to="/properties">
+                    <Link id="link" id="link" className="dropdown-item" to="/properties">
                       All Properties
                     </Link>
                   </li>
                   <li>
-                    <Link
+                    <Link id="link"
                       id="link"
                       className="dropdown-item"
                       to="/propertiessingle"
@@ -75,7 +75,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link id="link" className="dropdown-item" to="/faq">
+                    <Link id="link" id="link" className="dropdown-item" to="/faq">
                       FAQ
                     </Link>
                   </li>
@@ -83,12 +83,12 @@ const Header = () => {
               </li>
 
               <li className="nav-item">
-                <Link id="link" className="nav-link" to="/contact">
+                <Link id="link" id="link" className="nav-link" to="/contact">
                   Contact
                 </Link>
               </li>
               <li className="nav-item">
-                <Link id="link" className="nav-link" to="/services">
+                <Link id="link" id="link" className="nav-link" to="/services">
                   Services
                 </Link>
               </li>
@@ -96,7 +96,7 @@ const Header = () => {
 
             {/* Search & Profile Dropdown */}
             <div className="d-flex align-items-center">
-              <Link
+              <Link id="link"
                 id="link"
                 className="btn btn-secondary me-3"
                 to="/find-property"
@@ -128,12 +128,12 @@ const Header = () => {
                       aria-labelledby="profileDropdown"
                     >
                       <li>
-                        <Link className="dropdown-item" to="/profile">
+                        <Link id="link" className="dropdown-item" to="/profile">
                           View Profile
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/profile">
+                        <Link id="link" className="dropdown-item" to="/profile">
                           Edit Profile
                         </Link>
                       </li>
@@ -157,7 +157,7 @@ const Header = () => {
                       aria-labelledby="profileDropdown"
                     >
                       <li>
-                        <Link
+                        <Link id="link"
                           className="dropdown-item text-danger"
                           to={"/login"}
                         >

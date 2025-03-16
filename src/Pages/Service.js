@@ -74,7 +74,7 @@ function ServiceIndex() {
                   molestias nam officiis repellat. Sequi corrupti reiciendis
                   nostrum.
                 </p>
-                <Link to="/about" className="theme-button btn">
+                <Link id="link" to="/about" className="theme-button btn">
                   Read More
                 </Link>
               </div>
@@ -110,7 +110,7 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <Link to="/properties">
+                    <Link id="link" to="/properties">
                       Flexible, Contemporary &amp; Included Spaces
                     </Link>
                   </h5>
@@ -119,7 +119,7 @@ function ServiceFeature() {
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <Link to="/properties" className="red mt-3">
+                  <Link id="link" to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
                   </Link>
                 </div>
@@ -131,7 +131,7 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <Link to="/properties">
+                    <Link id="link" to="/properties">
                       Dedicated Production &amp; Planning Teams
                     </Link>
                   </h5>
@@ -140,7 +140,7 @@ function ServiceFeature() {
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <Link to="/properties" className="red mt-3">
+                  <Link id="link" to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
                   </Link>
                 </div>
@@ -152,7 +152,7 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <Link to="/properties">
+                    <Link id="link" to="/properties">
                       Premium, Fresh Cuisine Made Onsite
                     </Link>
                   </h5>
@@ -161,7 +161,7 @@ function ServiceFeature() {
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <Link to="/properties" className="red mt-3">
+                  <Link id="link" to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
                   </Link>
                 </div>
@@ -173,7 +173,7 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <Link to="/properties">
+                    <Link id="link" to="/properties">
                       We’re Here To Make You Successful
                     </Link>
                   </h5>
@@ -182,7 +182,7 @@ function ServiceFeature() {
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <Link to="/properties" className="red mt-3">
+                  <Link id="link" to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
                   </Link>
                 </div>
@@ -194,7 +194,7 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <Link to="/properties">
+                    <Link id="link" to="/properties">
                       Broker Cutting-Edge And Technology
                     </Link>
                   </h5>
@@ -203,7 +203,7 @@ function ServiceFeature() {
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <Link to="/properties" className="red mt-3">
+                  <Link id="link" to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
                   </Link>
                 </div>
@@ -215,7 +215,7 @@ function ServiceFeature() {
                 </div>
                 <div className="icon-info">
                   <h5>
-                    <Link to="/properties">
+                    <Link id="link" to="/properties">
                       Human-Centered Design Friendly Spaces
                     </Link>
                   </h5>
@@ -224,7 +224,7 @@ function ServiceFeature() {
                     Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed
                     do eiusmod tempor incididunt
                   </p>
-                  <Link to="/properties" className="red mt-3">
+                  <Link id="link" to="/properties" className="red mt-3">
                     Read More <span className="fa fa-long-arrow-right" />
                   </Link>
                 </div>
