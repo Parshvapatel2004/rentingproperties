@@ -17,6 +17,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Profile from "./Pages/Profile";
 import OwnerProfile from "./Pages/OwnerProfile";
 import UploadProperty from "./Pages/UploadProperty";
+import ManagePayments from "./Pages/ManagePayments";
+import ManageBooking from "./Pages/ManageBooking";
+import ManageRequest from "./Pages/ManageRequest";
+import MyBookings from "./Pages/MyBookings";
 
 const App = () => {
   return (
@@ -38,7 +42,11 @@ const App = () => {
           <Route path="/faq" element={<Faq />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/owner_profile" element={<OwnerProfile />} />
-          <Route path="/upload_property" element={<UploadProperty/>}/>
+          <Route path="/upload_property" element={<UploadProperty />} />
+          <Route path="/manage_payments" element={<ManagePayments />} />
+          <Route path="/manage_booking" element={<ManageBooking />} />
+          <Route path="/manage_request" element={<ManageRequest />} />
+          <Route path="/my_bookings" element={<MyBookings />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

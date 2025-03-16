@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Header from "../Common/Header";
 import Footer from "../Common/Footer";
+import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
 
-const ManageBooking = () => {
+const MyBookings = () => {
   return (
     <>
       <Header />
@@ -13,16 +14,15 @@ const ManageBooking = () => {
 };
 
 function Main() {
-  // Simulating the logged-in owner (In real-world, fetch from authentication)
-  const loggedInOwnerId = "OWN123"; // This ID should be dynamically fetched for each owner
+  // Simulating the logged-in user (In real-world, fetch from authentication)
+  const loggedInUserId = "USR101"; // This ID should be dynamically fetched for each user
 
   const [bookings, setBookings] = useState([
     {
       bookingId: "BKG001",
-      userId: "USR101",
-      ownerId: "OWN123", // Same owner ID for all bookings on this page
+      userId: "USR101", // Only bookings matching this ID will be displayed
+      ownerId: "OWN123",
       propertyId: "PRP001",
-      name: "Rahul Sharma",
       property: "3BHK Apartment, Mumbai",
       startDate: "2024-04-15",
       endDate: "2024-04-20",
@@ -30,10 +30,9 @@ function Main() {
     },
     {
       bookingId: "BKG002",
-      userId: "USR102",
-      ownerId: "OWN123",
+      userId: "USR101",
+      ownerId: "OWN124",
       propertyId: "PRP002",
-      name: "Priya Verma",
       property: "Villa, Bangalore",
       startDate: "2024-04-18",
       endDate: "2024-04-25",
@@ -41,22 +40,36 @@ function Main() {
     },
     {
       bookingId: "BKG003",
-      userId: "USR103",
-      ownerId: "OWN123",
+      userId: "USR101",
+      ownerId: "OWN125",
       propertyId: "PRP003",
-      name: "Amit Patel",
       property: "Office Space, Ahmedabad",
       startDate: "2024-04-20",
       endDate: "2024-04-28",
       status: "Pending",
     },
+    {
+      bookingId: "BKG004",
+      userId: "USR102",
+      ownerId: "OWN126",
+      propertyId: "PRP004",
+      property: "Shop, Hyderabad",
+      startDate: "2024-04-22",
+      endDate: "2024-04-30",
+      status: "Canceled",
+    },
   ]);
 
-  const handleStatusChange = (bookingId, newStatus) => {
+  // Filter bookings for the logged-in user
+  const userBookings = bookings.filter(
+    (booking) => booking.userId === loggedInUserId
+  );
+
+  const handleCancelBooking = (bookingId) => {
     setBookings(
       bookings.map((booking) =>
         booking.bookingId === bookingId
-          ? { ...booking, status: newStatus }
+          ? { ...booking, status: "Canceled" }
           : booking
       )
     );
@@ -67,7 +80,7 @@ function Main() {
       className="container mt-5"
       style={{ minHeight: "90vh", marginBottom: "70px" }}
     >
-      <h2 className="text-center mb-4">Manage Property Bookings</h2>
+      <h2 className="text-center mb-4">My Bookings</h2>
 
       <div className="table-responsive">
         <table className="table table-bordered table-hover text-center">
@@ -75,10 +88,8 @@ function Main() {
             <tr>
               <th>#</th>
               <th>Booking ID</th>
-              <th>User ID</th>
-              <th>Property ID</th>
-              <th>User Name</th>
               <th>Property</th>
+              <th>Owner ID</th>
               <th>Start Date</th>
               <th>End Date</th>
               <th>Status</th>
@@ -86,21 +97,19 @@ function Main() {
             </tr>
           </thead>
           <tbody>
-            {bookings.length === 0 ? (
+            {userBookings.length === 0 ? (
               <tr>
-                <td colSpan="10" className="text-center">
+                <td colSpan="8" className="text-center">
                   No bookings found.
                 </td>
               </tr>
             ) : (
-              bookings.map((booking, index) => (
+              userBookings.map((booking, index) => (
                 <tr key={booking.bookingId}>
                   <td>{index + 1}</td>
                   <td>{booking.bookingId}</td>
-                  <td>{booking.userId}</td>
-                  <td>{booking.propertyId}</td>
-                  <td>{booking.name}</td>
                   <td>{booking.property}</td>
+                  <td>{booking.ownerId}</td>
                   <td>{booking.startDate}</td>
                   <td>{booking.endDate}</td>
                   <td>
@@ -117,27 +126,14 @@ function Main() {
                     </span>
                   </td>
                   <td>
-                    {booking.status === "Pending" && (
-                      <>
-                        <button
-                          className="btn btn-success btn-sm me-2"
-                          onClick={() =>
-                            handleStatusChange(booking.bookingId, "Confirmed")
-                          }
-                        >
-                          Confirm
-                        </button>
-                        <button
-                          className="btn btn-danger btn-sm"
-                          onClick={() =>
-                            handleStatusChange(booking.bookingId, "Canceled")
-                          }
-                        >
-                          Cancel
-                        </button>
-                      </>
-                    )}
-                    {booking.status !== "Pending" && (
+                    {booking.status === "Pending" ? (
+                      <button
+                        className="btn btn-danger btn-sm"
+                        onClick={() => handleCancelBooking(booking.bookingId)}
+                      >
+                        Cancel
+                      </button>
+                    ) : (
                       <span className="text-muted">Action Taken</span>
                     )}
                   </td>
@@ -151,4 +147,4 @@ function Main() {
   );
 }
 
-export default ManageBooking;
+export default MyBookings;
