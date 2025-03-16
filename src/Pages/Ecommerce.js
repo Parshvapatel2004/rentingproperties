@@ -1,25 +1,27 @@
 import React from "react";
-import Header from "../Common/Header";
 import Banner from "../Common/Banner";
 import Footer from "../Common/Footer";
+import Header from "../Common/Header";
 import { Link } from "react-router-dom";
+
 const Ecommerce = () => {
   return (
     <div>
       <Header />
-      <Banner heading={"Ecommerce"} pagename={"Ecommerce"} />
-      <EcommerceMain/>
-      <Footer/>
-    </div> 
+      <Banner title={"Properites"} pageName={"ecommerce"} />
+      <Main />
+      <Footer />
+    </div>
   );
 };
-function EcommerceMain() {
+
+function Main() {
   return (
     <>
       <section className="w3l-ecommerce-page-main">
         <div className="ecom-pro-grids py-5">
           <div className="container py-md-3">
-            <div className="heading text-center mx-auto">
+            <div className="heading text-center  mx-auto px-5">
               <h3 className="head">Sale in New Jersey</h3>
               <p className="my-3 head">
                 {" "}
@@ -28,8 +30,8 @@ function EcommerceMain() {
                 turpis sodales quis. Integer sit amet mattis quam.
               </p>
             </div>
-            <div className="products-ecom-grids mt-5 pt-3">
-              <div className="products-right row">
+            <div className="products-ecom-grids mt-5 pt-3 px-5">
+              <div className="products-right row px-5">
                 <div className="product-grid2 col-md-6">
                   <div className="product-image2">
                     <Link id="link" to="/ecommerce-single">
@@ -44,17 +46,23 @@ function EcommerceMain() {
                     </Link>
                     <ul className="social">
                       <li>
-                        <Link id="link" to="/ecommerce-single" data-tip="Quick View">
-                          <span className="fa fa-eye" />
+                        <Link
+                          id="link"
+                          to="/ecommerce-single"
+                          data-tip="Quick View"
+                        >
+                          <span className="fa fa-eye"></span>
                         </Link>
                       </li>
+
                       <li>
-                        <Link id="link"
+                        <Link
+                          id="link"
                           className="crt"
                           to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
-                          <span className="fa fa-shopping-cart" />
+                          <span className="fa fa-shopping-cart"></span>
                         </Link>
                       </li>
                     </ul>
@@ -67,13 +75,14 @@ function EcommerceMain() {
                     </h3>
                     <ul>
                       <li>
-                        <span className="fa fa-bed" /> 3 Beds
+                        <span className="fa fa-bed"></span> 3 Beds
                       </li>
                       <li>
-                        <span className="fa fa-bath" /> 2 Baths
+                        <span className="fa fa-bath"></span> 2 Baths
                       </li>
                       <li>
-                        <span className="fa fa-share-square-o" /> 1200 sq ft
+                        <span className="fa fa-share-square-o"></span> 1200 sq
+                        ft
                       </li>
                     </ul>
                     <span className="price">$2199,000 USD </span>
@@ -93,17 +102,23 @@ function EcommerceMain() {
                     </Link>
                     <ul className="social">
                       <li>
-                        <Link id="link" to="/ecommerce-single" data-tip="Quick View">
-                          <span className="fa fa-eye" />
+                        <Link
+                          id="link"
+                          to="/ecommerce-single"
+                          data-tip="Quick View"
+                        >
+                          <span className="fa fa-eye"></span>
                         </Link>
                       </li>
+
                       <li>
-                        <Link id="link"
+                        <Link
+                          id="link"
                           className="crt"
                           to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
-                          <span className="fa fa-shopping-cart" />
+                          <span className="fa fa-shopping-cart"></span>
                         </Link>
                       </li>
                     </ul>
@@ -117,13 +132,14 @@ function EcommerceMain() {
                     </h3>
                     <ul>
                       <li>
-                        <span className="fa fa-bed" /> 3 Beds
+                        <span className="fa fa-bed"></span> 3 Beds
                       </li>
                       <li>
-                        <span className="fa fa-bath" /> 2 Baths
+                        <span className="fa fa-bath"></span> 2 Baths
                       </li>
                       <li>
-                        <span className="fa fa-share-square-o" /> 1200 sq ft
+                        <span className="fa fa-share-square-o"></span> 1200 sq
+                        ft
                       </li>
                     </ul>
                     <span className="price">$3199,000 USD </span>
@@ -143,17 +159,23 @@ function EcommerceMain() {
                     </Link>
                     <ul className="social">
                       <li>
-                        <Link id="link" to="/ecommerce-single" data-tip="Quick View">
-                          <span className="fa fa-eye" />
+                        <Link
+                          id="link"
+                          to="/ecommerce-single"
+                          data-tip="Quick View"
+                        >
+                          <span className="fa fa-eye"></span>
                         </Link>
                       </li>
+
                       <li>
-                        <Link id="link"
+                        <Link
+                          id="link"
                           className="crt"
                           to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
-                          <span className="fa fa-shopping-cart" />
+                          <span className="fa fa-shopping-cart"></span>
                         </Link>
                       </li>
                     </ul>
@@ -167,13 +189,14 @@ function EcommerceMain() {
                     </h3>
                     <ul>
                       <li>
-                        <span className="fa fa-bed" /> 3 Beds
+                        <span className="fa fa-bed"></span> 3 Beds
                       </li>
                       <li>
-                        <span className="fa fa-bath" /> 2 Baths
+                        <span className="fa fa-bath"></span> 2 Baths
                       </li>
                       <li>
-                        <span className="fa fa-share-square-o" /> 1200 sq ft
+                        <span className="fa fa-share-square-o"></span> 1200 sq
+                        ft
                       </li>
                     </ul>
                     <span className="price">$4199,000 USD </span>
@@ -193,17 +216,23 @@ function EcommerceMain() {
                     </Link>
                     <ul className="social">
                       <li>
-                        <Link id="link" to="/ecommerce-single" data-tip="Quick View">
-                          <span className="fa fa-eye" />
+                        <Link
+                          id="link"
+                          to="/ecommerce-single"
+                          data-tip="Quick View"
+                        >
+                          <span className="fa fa-eye"></span>
                         </Link>
                       </li>
+
                       <li>
-                        <Link id="link"
+                        <Link
+                          id="link"
                           className="crt"
                           to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
-                          <span className="fa fa-shopping-cart" />
+                          <span className="fa fa-shopping-cart"></span>
                         </Link>
                       </li>
                     </ul>
@@ -217,13 +246,14 @@ function EcommerceMain() {
                     </h3>
                     <ul>
                       <li>
-                        <span className="fa fa-bed" /> 3 Beds
+                        <span className="fa fa-bed"></span> 3 Beds
                       </li>
                       <li>
-                        <span className="fa fa-bath" /> 2 Baths
+                        <span className="fa fa-bath"></span> 2 Baths
                       </li>
                       <li>
-                        <span className="fa fa-share-square-o" /> 1200 sq ft
+                        <span className="fa fa-share-square-o"></span> 1200 sq
+                        ft
                       </li>
                     </ul>
                     <span className="price">$5199,000 USD</span>
@@ -243,17 +273,23 @@ function EcommerceMain() {
                     </Link>
                     <ul className="social">
                       <li>
-                        <Link id="link" to="/ecommerce-single" data-tip="Quick View">
-                          <span className="fa fa-eye" />
+                        <Link
+                          id="link"
+                          to="/ecommerce-single"
+                          data-tip="Quick View"
+                        >
+                          <span className="fa fa-eye"></span>
                         </Link>
                       </li>
+
                       <li>
-                        <Link id="link"
+                        <Link
+                          id="link"
                           className="crt"
                           to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
-                          <span className="fa fa-shopping-cart" />
+                          <span className="fa fa-shopping-cart"></span>
                         </Link>
                       </li>
                     </ul>
@@ -266,13 +302,14 @@ function EcommerceMain() {
                     </h3>
                     <ul>
                       <li>
-                        <span className="fa fa-bed" /> 3 Beds
+                        <span className="fa fa-bed"></span> 3 Beds
                       </li>
                       <li>
-                        <span className="fa fa-bath" /> 2 Baths
+                        <span className="fa fa-bath"></span> 2 Baths
                       </li>
                       <li>
-                        <span className="fa fa-share-square-o" /> 1200 sq ft
+                        <span className="fa fa-share-square-o"></span> 1200 sq
+                        ft
                       </li>
                     </ul>
                     <span className="price">$6199,000 USD</span>
@@ -292,17 +329,23 @@ function EcommerceMain() {
                     </Link>
                     <ul className="social">
                       <li>
-                        <Link id="link" to="/ecommerce-single" data-tip="Quick View">
-                          <span className="fa fa-eye" />
+                        <Link
+                          id="link"
+                          to="/ecommerce-single"
+                          data-tip="Quick View"
+                        >
+                          <span className="fa fa-eye"></span>
                         </Link>
                       </li>
+
                       <li>
-                        <Link id="link"
+                        <Link
+                          id="link"
                           className="crt"
                           to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
-                          <span className="fa fa-shopping-cart" />
+                          <span className="fa fa-shopping-cart"></span>
                         </Link>
                       </li>
                     </ul>
@@ -315,13 +358,14 @@ function EcommerceMain() {
                     </h3>
                     <ul>
                       <li>
-                        <span className="fa fa-bed" /> 3 Beds
+                        <span className="fa fa-bed"></span> 3 Beds
                       </li>
                       <li>
-                        <span className="fa fa-bath" /> 2 Baths
+                        <span className="fa fa-bath"></span> 2 Baths
                       </li>
                       <li>
-                        <span className="fa fa-share-square-o" /> 1200 sq ft
+                        <span className="fa fa-share-square-o"></span> 1200 sq
+                        ft
                       </li>
                     </ul>
                     <span className="price">$7199,000 USD</span>
@@ -341,17 +385,23 @@ function EcommerceMain() {
                     </Link>
                     <ul className="social">
                       <li>
-                        <Link id="link" to="/ecommerce-single" data-tip="Quick View">
-                          <span className="fa fa-eye" />
+                        <Link
+                          id="link"
+                          to="/ecommerce-single"
+                          data-tip="Quick View"
+                        >
+                          <span className="fa fa-eye"></span>
                         </Link>
                       </li>
+
                       <li>
-                        <Link id="link"
+                        <Link
+                          id="link"
                           className="crt"
                           to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
-                          <span className="fa fa-shopping-cart" />
+                          <span className="fa fa-shopping-cart"></span>
                         </Link>
                       </li>
                     </ul>
@@ -364,13 +414,14 @@ function EcommerceMain() {
                     </h3>
                     <ul>
                       <li>
-                        <span className="fa fa-bed" /> 3 Beds
+                        <span className="fa fa-bed"></span> 3 Beds
                       </li>
                       <li>
-                        <span className="fa fa-bath" /> 2 Baths
+                        <span className="fa fa-bath"></span> 2 Baths
                       </li>
                       <li>
-                        <span className="fa fa-share-square-o" /> 1200 sq ft
+                        <span className="fa fa-share-square-o"></span> 1200 sq
+                        ft
                       </li>
                     </ul>
                     <span className="price">$4599,000 USD</span>
@@ -390,17 +441,23 @@ function EcommerceMain() {
                     </Link>
                     <ul className="social">
                       <li>
-                        <Link id="link" to="/ecommerce-single" data-tip="Quick View">
-                          <span className="fa fa-eye" />
+                        <Link
+                          id="link"
+                          to="/ecommerce-single"
+                          data-tip="Quick View"
+                        >
+                          <span className="fa fa-eye"></span>
                         </Link>
                       </li>
+
                       <li>
-                        <Link id="link"
+                        <Link
+                          id="link"
                           className="crt"
                           to="/ecommerce-single"
                           data-tip="Add to Cart"
                         >
-                          <span className="fa fa-shopping-cart" />
+                          <span className="fa fa-shopping-cart"></span>
                         </Link>
                       </li>
                     </ul>
@@ -414,13 +471,14 @@ function EcommerceMain() {
                     </h3>
                     <ul>
                       <li>
-                        <span className="fa fa-bed" /> 3 Beds
+                        <span className="fa fa-bed"></span> 3 Beds
                       </li>
                       <li>
-                        <span className="fa fa-bath" /> 2 Baths
+                        <span className="fa fa-bath"></span> 2 Baths
                       </li>
                       <li>
-                        <span className="fa fa-share-square-o" /> 1200 sq ft
+                        <span className="fa fa-share-square-o"></span> 1200 sq
+                        ft
                       </li>
                     </ul>
                     <span className="price">$3699,000 USD</span>
@@ -430,7 +488,6 @@ function EcommerceMain() {
             </div>
           </div>
         </div>
-        {/*/w3l-ecommerce-page-main*/}
       </section>
     </>
   );

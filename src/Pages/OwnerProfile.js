@@ -19,19 +19,19 @@ function Main() {
   const [isEditingProperty, setIsEditingProperty] = useState(null);
 
   const [user, setUser] = useState({
-    name: "John Doe",
-    email: "johndoe@example.com",
+    name: "Jay Patel",
+    email: "jaypatel@gmail.com",
     phone: "+1 234 567 890",
     bio: "Real Estate Investor & Property Owner | 5+ Years in Rental Business",
-    profilePic: "https://www.w3schools.com/howto/img_avatar.png",
+    profilePic: "/assets/images/te1.jpg",
   });
 
   const [properties, setProperties] = useState([
     {
       id: 1,
-      title: "Luxury Apartment in New York",
-      rent: "$2000/month",
-      location: "New York, NY",
+      title: "Luxury Apartment in Mumbai",
+      rent: "₹50,000/month",
+      location: "Mumbai, Maharashtra",
       bedrooms: 3,
       bathrooms: 2,
       description:
@@ -41,9 +41,9 @@ function Main() {
     },
     {
       id: 2,
-      title: "Cozy 2BHK in Los Angeles",
-      rent: "$1500/month",
-      location: "Los Angeles, CA",
+      title: "Cozy 2BHK in Bangalore",
+      rent: "₹35,000/month",
+      location: "Bangalore, Karnataka",
       bedrooms: 2,
       bathrooms: 1,
       description:
@@ -53,9 +53,9 @@ function Main() {
     },
     {
       id: 3,
-      title: "Modern Studio in San Francisco",
-      rent: "$1800/month",
-      location: "San Francisco, CA",
+      title: "Modern Studio in Delhi",
+      rent: "₹40,000/month",
+      location: "Delhi",
       bedrooms: 1,
       bathrooms: 1,
       description:
@@ -102,9 +102,11 @@ function Main() {
       setProperties(updatedProperties);
     }
   };
+
+  // Handle Logout
   const handleLogout = () => {
-    alert("You have been Logged Out!");
-    navigate("/login");
+    alert("You have been logged out!");
+    navigate("/login"); // Redirect to login page
   };
 
   return (
@@ -172,15 +174,21 @@ function Main() {
               {user.email} | {user.phone}
             </p>
             <p className="card-text">{user.bio}</p>
-            <button
-              className="btn btn-primary mb-4"
-              onClick={() => setIsEditingProfile(true)}
-            >
-              Edit Profile
-            </button>
-            <button className="btn btn-danger mb-4 ms-2" onClick={handleLogout}>
-              Logout
-            </button>
+            <div className="d-flex justify-content-center align-items-center">
+              <button
+                className="btn btn-primary mb-4"
+                onClick={() => setIsEditingProfile(true)}
+              >
+                Edit Profile
+              </button>
+              {/* Logout Button */}
+              <button
+                className="btn btn-danger mb-4 ms-2"
+                onClick={handleLogout}
+              >
+                Logout
+              </button>
+            </div>
           </>
         )}
 
@@ -210,30 +218,6 @@ function Main() {
                         type="text"
                         name="rent"
                         value={property.rent}
-                        onChange={(e) => handlePropertyChange(property.id, e)}
-                        className="form-control mb-2"
-                        required
-                      />
-                      <input
-                        type="text"
-                        name="location"
-                        value={property.location}
-                        onChange={(e) => handlePropertyChange(property.id, e)}
-                        className="form-control mb-2"
-                        required
-                      />
-                      <input
-                        type="number"
-                        name="bedrooms"
-                        value={property.bedrooms}
-                        onChange={(e) => handlePropertyChange(property.id, e)}
-                        className="form-control mb-2"
-                        required
-                      />
-                      <input
-                        type="number"
-                        name="bathrooms"
-                        value={property.bathrooms}
                         onChange={(e) => handlePropertyChange(property.id, e)}
                         className="form-control mb-2"
                         required
@@ -272,10 +256,10 @@ function Main() {
                       </p>
                       <p className="card-text">{property.description}</p>
                       <button
-                        className="btn btn-primary"
+                        className="btn btn-primary me-2"
                         onClick={() => setIsEditingProperty(property.id)}
                       >
-                        Edit Property
+                        Edit
                       </button>
                       <button
                         className="btn btn-danger"

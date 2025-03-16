@@ -1,21 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SignUp = () => {
+const SignUP = () => {
+  return (
+    <div>
+      <Main />
+    </div>
+  );
+};
+function Main() {
   return (
     <div>
       <section className="w3l-forms-23">
         <div id="forms23-block">
           <div className="wrapper">
             <div className="logo1">
-              <Link id="link" className="brand-logo" to="/index">
-                <span>Renting</span>Properties
+              <Link id="link" className="brand-logo" to="/">
+                <span>Renting </span>Properties
               </Link>
-              
             </div>
             <div className="d-grid forms23-grids">
               <div className="form23">
                 <h6>Register a new account</h6>
+
                 <form action="#" method="GET">
                   <input
                     type="text"
@@ -35,10 +42,14 @@ const SignUp = () => {
                     placeholder="Password"
                     required="required"
                   />
+
                   <button type="submit">Sign Up</button>
                 </form>
                 <p>
-                  Are you a member? <Link id="link" to="/login">Login now</Link>
+                  Are you a member?{" "}
+                  <Link id="link" to="/login">
+                    Login now
+                  </Link>
                 </p>
               </div>
               <div className="frm-tp">
@@ -47,7 +58,10 @@ const SignUp = () => {
                   <div className="form23-text-top">
                     <Link id="link" to="/#facebook">
                       <div className="signin facebook">
-                        <span className="fa fa-facebook" aria-hidden="true" />
+                        <span
+                          className="fa fa-facebook"
+                          aria-hidden="true"
+                        ></span>
                         <p className="action">Facebook</p>
                       </div>
                     </Link>
@@ -56,19 +70,25 @@ const SignUp = () => {
                         <span
                           className="fa fa-google-plus"
                           aria-hidden="true"
-                        />
+                        ></span>
                         <p className="action">Google</p>
                       </div>
                     </Link>
                     <Link id="link" to="/#twitter">
                       <div className="signin twitter">
-                        <span className="fa fa-twitter" aria-hidden="true" />
+                        <span
+                          className="fa fa-twitter"
+                          aria-hidden="true"
+                        ></span>
                         <p className="action">Twitter</p>
                       </div>
                     </Link>
                     <Link id="link" to="/#linkedin">
                       <div className="signin linkedin">
-                        <span className="fa fa-linkedin" aria-hidden="true" />
+                        <span
+                          className="fa fa-linkedin"
+                          aria-hidden="true"
+                        ></span>
                         <p className="action">Linkedin</p>
                       </div>
                     </Link>
@@ -81,6 +101,6 @@ const SignUp = () => {
       </section>
     </div>
   );
-};
+}
 
-export default SignUp;
+export default SignUP;

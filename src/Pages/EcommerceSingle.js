@@ -4,148 +4,146 @@ import Banner from "../Common/Banner";
 import Footer from "../Common/Footer";
 import { Link } from "react-router-dom";
 
-const Ecommercesingle = () => {
+const EcommerceSingle = () => {
   return (
     <div>
       <Header />
-      <Banner  heading={"Ecommerce Single"} pagename={"Ecommerce Single"}/>
-      <EcommerceMain />
+      <Banner title={"Ecommerce"} pageName={"ecommerce-single"} />
+      <Main />
       <Footer />
     </div>
   );
 };
-function EcommerceMain() {
+function Main() {
   return (
-    <>
-      <section className="w3l-features-photo-7">
-        <div className="features-photo-7_sur py-5">
-          <div className="container py-md-3">
-            <div className="features-photo-7_top row">
-              <div className="features-photo-7_top-right col-lg-5">
-                <div className="galleryContainer">
-                  <div className="gallery">
-                    <input
-                      type="radio"
-                      name="controls"
-                      id="c1"
-                      defaultChecked
-                    />
+    <div style={{ padding: "0 140px" }}>
+      <section class="w3l-features-photo-7">
+        <div class="features-photo-7_sur py-5">
+          <div class="container py-md-3">
+            <div class="features-photo-7_top row">
+              <div class="features-photo-7_top-right col-lg-5">
+                <div class="galleryContainer">
+                  <div class="gallery">
+                    <input type="radio" name="controls" id="c1" checked />
                     <img
-                      className="galleryImage"
+                      class="galleryImage img-responsive"
                       id="i1"
                       src="assets/images/g4.jpg"
-                      alt
+                      alt=""
                     />
                     <input type="radio" name="controls" id="c2" />
                     <img
-                      className="galleryImage"
+                      class="galleryImage img-responsive"
                       id="i2"
                       src="assets/images/g5.jpg"
-                      alt
+                      alt=""
                     />
                     <input type="radio" name="controls" id="c3" />
                     <img
-                      className="galleryImage"
+                      class="galleryImage img-responsive"
                       id="i3"
                       src="assets/images/g6.jpg"
-                      alt
+                      alt=""
                     />
                     <input type="radio" name="controls" id="c4" />
                     <img
-                      className="galleryImage"
+                      class="galleryImage img-responsive"
                       id="i4"
                       src="assets/images/g7.jpg"
-                      alt
+                      alt=""
                     />
                   </div>
-                  <div className="thumbnails">
-                    <label className="thumbnailImage" htmlFor="c1">
+                  <div class="thumbnails">
+                    <label class="thumbnailImage" htmlFor="c1">
                       <img
                         src="assets/images/g4.jpg"
-                        className="img-responsive"
-                        alt
+                        class="img-responsive"
+                        alt=""
                       />
                     </label>
-                    <label className="thumbnailImage" htmlFor="c2">
+                    <label class="thumbnailImage" htmlFor="c2">
                       <img
                         src="assets/images/g5.jpg"
-                        className="img-responsive"
-                        alt
+                        class="img-responsive"
+                        alt=""
                       />
                     </label>
-                    <label className="thumbnailImage" htmlFor="c3">
+                    <label class="thumbnailImage" htmlFor="c3">
                       <img
                         src="assets/images/g6.jpg"
-                        className="img-responsive"
-                        alt
+                        class="img-responsive"
+                        alt=""
                       />
                     </label>
-                    <label className="thumbnailImage" htmlFor="c4">
+                    <label class="thumbnailImage" htmlFor="c4">
                       <img
                         src="assets/images/g7.jpg"
-                        className="img-responsive"
-                        alt
+                        class="img-responsive"
+                        alt=""
                       />
                     </label>
                   </div>
                 </div>
               </div>
-              <div className="features-photo-7_top-left col-lg-7">
+              <div class="features-photo-7_top-left col-lg-7">
                 <h3>801 Renaissance Dr, Williamstown, NJ 08094 </h3>
-                <ul className="beds">
+                <ul class="beds">
                   <li>
-                    <span className="fa fa-bed" /> 3 Beds
+                    <span class="fa fa-bed"></span> 3 Beds
                   </li>
                   <li>
-                    <span className="fa fa-bath" /> 2 Baths
+                    <span class="fa fa-bath"></span> 2 Baths
                   </li>
                   <li>
-                    <span className="fa fa-share-square-o" /> 1200 sq ft
+                    <span class="fa fa-share-square-o"></span> 1200 sq ft
                   </li>
                 </ul>
                 <h5>$225,000</h5>
-                <div className="color-quality-right"></div>
-                <div className="desc_single">
+
+                <div class="color-quality-right"></div>
+
+                <div class="desc_single">
                   <h6>Facts and Features</h6>
-                  <ul className>
+
+                  <ul class="">
                     <li>
-                      <span className="title-text">Type : </span>
-                      <span className="feature-count"> Single Family</span>
+                      <span class="title-text">Type : </span>
+                      <span class="feature-count"> Single Family</span>
                     </li>
                     <li>
-                      <span className="title-text">Year built : </span>
-                      <span className="feature-count">2014</span>
+                      <span class="title-text">Year built : </span>
+                      <span class="feature-count">2014</span>
                     </li>
                     <li>
-                      <span className="title-text">Heating : </span>
-                      <span className="feature-count">Forced air</span>
+                      <span class="title-text">Heating : </span>
+                      <span class="feature-count">Forced air</span>
                     </li>
                     <li>
-                      <span className="title-text">Cooling : </span>{" "}
-                      <span className="feature-count">Central</span>
+                      <span class="title-text">Cooling : </span>{" "}
+                      <span class="feature-count">Central</span>
                     </li>
                     <li>
-                      <span className="title-text">Parking : </span>{" "}
-                      <span className="feature-count">5 spaces</span>
+                      <span class="title-text">Parking : </span>{" "}
+                      <span class="feature-count">5 spaces</span>
                     </li>
                     <li>
-                      <span className="title-text">Lot : </span>{" "}
-                      <span className="feature-count">10,018 sqft</span>
+                      <span class="title-text">Lot : </span>{" "}
+                      <span class="feature-count">10,018 sqft</span>
                     </li>
                     <li>
-                      <span className="title-text">Price/sqft : </span>{" "}
-                      <span className="feature-count">$65</span>
+                      <span class="title-text">Price/sqft : </span>{" "}
+                      <span class="feature-count">$65</span>
                     </li>
                   </ul>
                 </div>
-                <div className="buttons">
-                  <Link id="link" to="/agent-single" className="actionbg">
+                <div class="buttons">
+                  <Link id="link" to="/agent-single" class="actionbg">
                     Contact Agent
                   </Link>
                 </div>
               </div>
             </div>
-            <div className>
+            <div class="">
               <h4>Over View :-</h4>
               <p>
                 Welcome to the Arbours. As you approach the home you will notice
@@ -163,8 +161,8 @@ function EcommerceMain() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
-export default Ecommercesingle;
+export default EcommerceSingle;

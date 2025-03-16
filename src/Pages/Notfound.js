@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Notfound = () => {
+const NotFound = () => {
   return (
     <div>
       <div className="w3l-error-main">
-        {/* error */}
-        <div className="error">
+        <div className="error p-5 ">
           <div className="container">
             <div className="row main-cont-grid align-items-center">
               <div className="sub-wthreess col-md-6">
@@ -21,15 +20,18 @@ const Notfound = () => {
                 </Link>
               </div>
               <div className="right-cont col-md-6 mt-md-0 mt-5">
-                <img src="assets/images/error.png" alt className="img-fluid" />
+                <img
+                  src="assets/images/error.png"
+                  alt=""
+                  className="img-fluid"
+                />
               </div>
             </div>
           </div>
         </div>
-        {/* //error */}
       </div>
     </div>
   );
 };
 
-export default Notfound;
+export default NotFound;

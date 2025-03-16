@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../Common/Header";
 import Footer from "../Common/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
   return (
@@ -15,13 +16,15 @@ const Profile = () => {
 function Main() {
   const [isEditing, setIsEditing] = useState(false);
   const [user, setUser] = useState({
-    name: "John Doe",
-    email: "johndoe@example.com",
+    name: "Priya Patel",
+    email: "priyapatel@gmail.com",
     bio: "Full Stack Developer | React & Node.js Enthusiast",
     profilePic:
       "https://th.bing.com/th/id/OIP.jryuUgIHWL-1FVD2ww8oWgHaHa?rs=1&pid=ImgDetMain",
   });
 
+  //navigate to login page:
+  const navigate = useNavigate();
   // Handle form input changes
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -35,7 +38,7 @@ function Main() {
   // Logout Function
   const handleLogout = () => {
     alert("You have been logged out!");
-    window.location.href = "/login"; // Redirect to login page (Change as needed)
+    navigate("/login"); // Redirect to login page (Change as needed)
   };
 
   return (
