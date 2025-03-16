@@ -16,6 +16,7 @@ import SearchResults from "./Pages/SearchResults";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Profile from "./Pages/Profile";
 import OwnerProfile from "./Pages/OwnerProfile";
+import UploadProperty from "./Pages/UploadProperty";
 
 const App = () => {
   return (
@@ -36,7 +37,8 @@ const App = () => {
           <Route path="/search-results" element={<SearchResults />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/ownerprofile" element={<OwnerProfile />} />
+          <Route path="/owner_profile" element={<OwnerProfile />} />
+          <Route path="/upload_property" element={<UploadProperty/>}/>
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -11,13 +11,15 @@ const Footer = () => {
               <div className="row footer-top-28">
                 <div className="col-lg-6 footer-list-28">
                   <h2 className="footer-title-28">
-                    <Link id="link" to="index">Renting Properties</Link>
+                    <Link id="link" to="index">
+                      Renting Properties
+                    </Link>
                   </h2>
                   <p className="mt-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Discover your perfect rental property with us. We offer a
+                    wide range of properties to suit all needs and budgets. Our
+                    dedicated team is here to help you find your next home with
+                    ease and confidence.
                   </p>
                   <div className="main-social-footer-28 mt-3">
                     <ul className="social-icons">
@@ -50,16 +52,24 @@ const Footer = () => {
                       <h6 className="footer-title-28">Important Links</h6>
                       <ul className="mt-4">
                         <li>
-                          <Link id="link" to="/">Home</Link>
+                          <Link id="link" to="/">
+                            Home
+                          </Link>
                         </li>
                         <li>
-                          <Link id="link" to="/about">About</Link>
+                          <Link id="link" to="/about">
+                            About
+                          </Link>
                         </li>
                         <li>
-                          <Link id="link" to="/services">Services</Link>
+                          <Link id="link" to="/services">
+                            Services
+                          </Link>
                         </li>
                         <li>
-                          <Link id="link" to="/contact">Contact</Link>
+                          <Link id="link" to="/contact">
+                            Contact
+                          </Link>
                         </li>
                       </ul>
                     </div>
