@@ -24,6 +24,43 @@ const Home = () => {
 };
 
 const Slider = () => {
+  const propertySlides = [
+    {
+      location: "Mumbai, India",
+      title: "Luxury Apartments in Bandra",
+      beds: 3,
+      baths: 2,
+      size: "1500",
+    },
+    {
+      location: "Bangalore, India",
+      title: "Spacious Villas in Whitefield",
+      beds: 4,
+      baths: 3,
+      size: "2000",
+    },
+    {
+      location: "Delhi, India",
+      title: "Modern Flats in Connaught Place",
+      beds: 2,
+      baths: 2,
+      size: "1200",
+    },
+    {
+      location: "Chennai, India",
+      title: "Beachside Villas in ECR",
+      beds: 5,
+      baths: 4,
+      size: "2500",
+    },
+    {
+      location: "Kolkata, India",
+      title: "Heritage Homes in Salt Lake",
+      beds: 3,
+      baths: 2,
+      size: "1800",
+    },
+  ];
   return (
     <section className="w3l-main-slider" id="home">
       <div className="companies20-content">
@@ -43,196 +80,49 @@ const Slider = () => {
             autoplay={{ delay: 2000, disableOnInteraction: false }}
             loop={true}
           >
-            <SwiperSlide>
-              <div className="item">
-                <li>
-                  <div className="slider-info banner-view banner-top0 bg bg2">
-                    <div className="banner-info">
-                      <div className="container">
-                        <div className="banner-info-bg">
-                          <h6>
-                            <span className="fa fa-map-marker" /> Mumbai, India
-                          </h6>
-                          <h5>Luxury Apartments in Bandra</h5>
-                          <ul className="banner-ul">
-                            <li>
-                              <span className="fa fa-bed" /> 3
-                            </li>
-                            <li>
-                              <span className="fa fa-bath" /> 2
-                            </li>
-                            <li>
-                              <span className="fa fa-share-square-o" /> 1500 sq
-                              ft
-                            </li>
-                          </ul>
-                          <Link
-                            id="link"
-                            className="btn btn-secondary btn-theme1"
-                            to="/properties"
-                          >
-                            {" "}
-                            View Property
-                          </Link>
+            {propertySlides.map((slide, index) => (
+              <SwiperSlide key={index}>
+                <div className="item">
+                  <li>
+                    <div
+                      className={`slider-info banner-view banner-top${index} bg bg2`}
+                    >
+                      <div className="banner-info">
+                        <div className="container">
+                          <div className="banner-info-bg">
+                            <h6>
+                              <span className="fa fa-map-marker" />
+                              {slide.location}
+                            </h6>
+                            <h5>{slide.title}</h5>
+                            <ul className="banner-ul">
+                              <li>
+                                <span className="fa fa-bed" />
+                                {slide.beds}
+                              </li>
+                              <li>
+                                <span className="fa fa-bath" /> {slide.baths}
+                              </li>
+                              <li>
+                                <span className="fa fa-share-square-o" />{" "}
+                                {slide.size}
+                              </li>
+                            </ul>
+                            <Link
+                              id="link"
+                              className="btn btn-secondary btn-theme1"
+                              to="/properties"
+                            >
+                              View Property
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="item">
-                <li>
-                  <div className="slider-info banner-view banner-top1  bg bg2">
-                    <div className="banner-info">
-                      <div className="container">
-                        <div className="banner-info-bg">
-                          <h6>
-                            <span className="fa fa-map-marker" /> Bangalore,
-                            India
-                          </h6>
-                          <h5>Spacious Villas in Whitefield</h5>
-                          <ul className="banner-ul">
-                            <li>
-                              <span className="fa fa-bed" /> 4
-                            </li>
-                            <li>
-                              <span className="fa fa-bath" /> 3
-                            </li>
-                            <li>
-                              <span className="fa fa-share-square-o" /> 2000 sq
-                              ft
-                            </li>
-                          </ul>
-                          <Link
-                            id="link"
-                            className="btn btn-secondary btn-theme1"
-                            to="/properties"
-                          >
-                            View Property
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="item">
-                <li>
-                  <div className="slider-info banner-view banner-top2 bg bg2">
-                    <div className="banner-info">
-                      <div className="container">
-                        <div className="banner-info-bg">
-                          <h6>
-                            <span className="fa fa-map-marker" /> Delhi, India
-                          </h6>
-                          <h5>Modern Flats in Connaught Place</h5>
-                          <ul className="banner-ul">
-                            <li>
-                              <span className="fa fa-bed" /> 2
-                            </li>
-                            <li>
-                              <span className="fa fa-bath" /> 2
-                            </li>
-                            <li>
-                              <span className="fa fa-share-square-o" /> 1200 sq
-                              ft
-                            </li>
-                          </ul>
-                          <Link
-                            id="link"
-                            className="btn btn-secondary btn-theme1"
-                            to="/properties"
-                          >
-                            {" "}
-                            View Property
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="item">
-                <li>
-                  <div className="slider-info banner-view banner-top3 bg bg2">
-                    <div className="banner-info">
-                      <div className="container">
-                        <div className="banner-info-bg">
-                          <h6>
-                            <span className="fa fa-map-marker" /> Chennai, India
-                          </h6>
-                          <h5>Beachside Villas in ECR</h5>
-                          <ul className="banner-ul">
-                            <li>
-                              <span className="fa fa-bed" /> 5
-                            </li>
-                            <li>
-                              <span className="fa fa-bath" /> 4
-                            </li>
-                            <li>
-                              <span className="fa fa-share-square-o" /> 2500 sq
-                              ft
-                            </li>
-                          </ul>
-                          <Link
-                            id="link"
-                            className="btn btn-secondary btn-theme1"
-                            to="/properties"
-                          >
-                            {" "}
-                            View Property
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="item">
-                <li>
-                  <div className="slider-info banner-view banner-top4 bg bg2">
-                    <div className="banner-info">
-                      <div className="container">
-                        <div className="banner-info-bg">
-                          <h6>
-                            <span className="fa fa-map-marker" /> Kolkata, India
-                          </h6>
-                          <h5>Heritage Homes in Salt Lake</h5>
-                          <ul className="banner-ul">
-                            <li>
-                              <span className="fa fa-bed" /> 3
-                            </li>
-                            <li>
-                              <span className="fa fa-bath" /> 2
-                            </li>
-                            <li>
-                              <span className="fa fa-share-square-o" /> 1800 sq
-                              ft
-                            </li>
-                          </ul>
-                          <Link
-                            id="link"
-                            className="btn btn-secondary btn-theme1"
-                            to="/properties"
-                          >
-                            {" "}
-                            View Property
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </div>
-            </SwiperSlide>
+                  </li>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
@@ -373,6 +263,62 @@ const Specification = () => {
 };
 
 const PropertyInfo = () => {
+  const properties = [
+    {
+      title: "Luxury Apartment in Bandra",
+      location: "Mumbai, Maharashtra, India",
+      beds: 4,
+      baths: 3,
+      area: "1800 sq ft",
+      image: "assets/images/g12.jpg",
+      link: "/properties-single",
+    },
+    {
+      title: "Spacious Villa in Whitefield",
+      location: "Bangalore, Karnataka, India",
+      beds: 3,
+      baths: 2,
+      area: "2200 sq ft",
+      image: "assets/images/g11.jpg",
+      link: "/properties-single",
+    },
+    {
+      title: "Modern Flat in Connaught Place",
+      location: "Delhi, India",
+      beds: 2,
+      baths: 2,
+      area: "1400 sq ft",
+      image: "assets/images/g10.jpg",
+      link: "/properties-single",
+    },
+    {
+      title: "Beachside Villa in ECR",
+      location: "Chennai, Tamil Nadu, India",
+      beds: 5,
+      baths: 4,
+      area: "2500 sq ft",
+      image: "assets/images/g9.jpg",
+      link: "/properties-single",
+    },
+    {
+      title: "Heritage Home in Salt Lake",
+      location: "Kolkata, West Bengal, India",
+      beds: 3,
+      baths: 2,
+      area: "1900 sq ft",
+      image: "assets/images/g8.jpg",
+      link: "/properties-single",
+    },
+    {
+      title: "Premium Bungalow in Jubilee Hills",
+      location: "Hyderabad, Telangana, India",
+      beds: 6,
+      baths: 5,
+      area: "3000 sq ft",
+      image: "assets/images/g7.jpg",
+      link: "/properties-single",
+    },
+  ];
   return (
     <section className="grids-4">
       <div id="grids4-block" className="py-5">
@@ -386,150 +332,39 @@ const PropertyInfo = () => {
             </p>
           </div>
           <div className="row mt-5 pt-3">
-            <div className="grids4-info col-lg-4 col-md-6">
-              <Link id="link" to="/properties-single">
-                <img src="assets/images/g12.jpg" className="img-fluid" alt="" />
-              </Link>
-              <div className="info-bg">
-                <h5>
-                  <Link id="link" to="/properties-single">
-                    Luxury Apartment in Bandra
-                  </Link>
-                </h5>
-                <p>Mumbai, Maharashtra, India</p>
-                <ul>
-                  <li>
-                    <span className="fa fa-bed" /> 4 Beds
-                  </li>
-                  <li>
-                    <span className="fa fa-bath" /> 3 Baths
-                  </li>
-                  <li>
-                    <span className="fa fa-share-square-o" /> 1800 sq ft
-                  </li>
-                </ul>
+            {properties.map((property, index) => (
+              <div
+                key={index}
+                className="grids4-info col-lg-4 col-md-6 mt-md-0 mt-4"
+              >
+                <Link id="link" to={property.link}>
+                  <img
+                    src={property.image}
+                    className="img-fluid"
+                    alt={property.title}
+                  />
+                </Link>
+                <div className="info-bg">
+                  <h5>
+                    <Link id="link" to={property.link}>
+                      {property.title}
+                    </Link>
+                  </h5>
+                  <p>{property.location}</p>
+                  <ul>
+                    <li>
+                      <span className="fa fa-bed" /> {property.beds} Beds
+                    </li>
+                    <li>
+                      <span className="fa fa-bath" /> {property.baths} Baths
+                    </li>
+                    <li>
+                      <span className="fa fa-share-square-o" /> {property.area}
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div className="grids4-info col-lg-4 col-md-6 mt-md-0 mt-4">
-              <Link id="link" to="/properties-single">
-                <img src="assets/images/g11.jpg" className="img-fluid" alt="" />
-              </Link>
-              <div className="info-bg">
-                <h5>
-                  <Link id="link" to="/properties-single">
-                    Spacious Villa in Whitefield
-                  </Link>
-                </h5>
-                <p>Bangalore, Karnataka, India</p>
-                <ul>
-                  <li>
-                    <span className="fa fa-bed" /> 3 Beds
-                  </li>
-                  <li>
-                    <span className="fa fa-bath" /> 2 Baths
-                  </li>
-                  <li>
-                    <span className="fa fa-share-square-o" /> 2200 sq ft
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="grids4-info col-lg-4 col-md-6 mt-lg-0 mt-4">
-              <Link id="link" to="/properties-single">
-                <img src="assets/images/g10.jpg" className="img-fluid" alt="" />
-              </Link>
-              <div className="info-bg">
-                <h5>
-                  <Link id="link" to="/properties-single">
-                    Modern Flat in Connaught Place
-                  </Link>
-                </h5>
-                <p>Delhi, India</p>
-                <ul>
-                  <li>
-                    <span className="fa fa-bed" /> 2 Beds
-                  </li>
-                  <li>
-                    <span className="fa fa-bath" /> 2 Baths
-                  </li>
-                  <li>
-                    <span className="fa fa-share-square-o" /> 1400 sq ft
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="grids4-info col-lg-4 col-md-6 mt-4">
-              <Link id="link" to="/properties-single">
-                <img src="assets/images/g9.jpg" className="img-fluid" alt="" />
-              </Link>
-              <div className="info-bg">
-                <h5>
-                  <Link id="link" to="/properties-single">
-                    Beachside Villa in ECR
-                  </Link>
-                </h5>
-                <p>Chennai, Tamil Nadu, India</p>
-                <ul>
-                  <li>
-                    <span className="fa fa-bed" /> 5 Beds
-                  </li>
-                  <li>
-                    <span className="fa fa-bath" /> 4 Baths
-                  </li>
-                  <li>
-                    <span className="fa fa-share-square-o" /> 2500 sq ft
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="grids4-info col-lg-4 col-md-6 mt-4">
-              <Link id="link" to="/properties-single">
-                <img src="assets/images/g8.jpg" className="img-fluid" alt="" />
-              </Link>
-              <div className="info-bg">
-                <h5>
-                  <Link id="link" to="/properties-single">
-                    Heritage Home in Salt Lake
-                  </Link>
-                </h5>
-                <p>Kolkata, West Bengal, India</p>
-                <ul>
-                  <li>
-                    <span className="fa fa-bed" /> 3 Beds
-                  </li>
-                  <li>
-                    <span className="fa fa-bath" /> 2 Baths
-                  </li>
-                  <li>
-                    <span className="fa fa-share-square-o" /> 1900 sq ft
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="grids4-info col-lg-4 col-md-6 mt-4">
-              <Link id="link" to="/properties-single">
-                <img src="assets/images/g7.jpg" className="img-fluid" alt="" />
-              </Link>
-              <div className="info-bg">
-                <h5>
-                  <Link id="link" to="/properties-single">
-                    Premium Bungalow in Jubilee Hills
-                  </Link>
-                </h5>
-                <p>Hyderabad, Telangana, India</p>
-                <ul>
-                  <li>
-                    <span className="fa fa-bed" /> 6 Beds
-                  </li>
-                  <li>
-                    <span className="fa fa-bath" /> 5 Baths
-                  </li>
-                  <li>
-                    <span className="fa fa-share-square-o" /> 3000 sq ft
-                  </li>
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
