@@ -4,6 +4,51 @@ import Banner from "../Common/Banner";
 import Footer from "../Common/Footer";
 import { Link } from "react-router-dom";
 
+const propertiesData = [
+  {
+    image: "assets/images/g7.jpg",
+    location: "Bodakdev, Ahmedabad, Gujarat",
+    beds: 4,
+    baths: 3,
+    size: "1800",
+  },
+  {
+    image: "assets/images/g8.jpg",
+    location: "Jubilee Hills, Hyderabad, Telangana",
+    beds: 3,
+    baths: 2,
+    size: "1500",
+  },
+  {
+    image: "assets/images/g9.jpg",
+    location: "Koramangala, Bangalore, Karnataka",
+    beds: 4,
+    baths: 3,
+    size: "2000",
+  },
+  {
+    image: "assets/images/g10.jpg",
+    location: "Salt Lake, Kolkata, West Bengal",
+    beds: 5,
+    baths: 3,
+    size: "2500",
+  },
+  {
+    image: "assets/images/g11.jpg",
+    location: "Viman Nagar, Pune, Maharashtra",
+    beds: 2,
+    baths: 1,
+    size: "1300",
+  },
+  {
+    image: "assets/images/g12.jpg",
+    location: "Civil Lines, Jaipur, Rajasthan",
+    beds: 4,
+    baths: 3,
+    size: "2200 ",
+  },
+];
+
 const Properties = () => {
   return (
     <div>
@@ -15,196 +60,53 @@ const Properties = () => {
   );
 };
 
-function Main() {
+const Main = () => {
   return (
-    <>
-      <section
-        className="grids-3 m-auto"
-        id="properties"
-        style={{ width: "75%" }}
-      >
-        <div id="grids3-block" className="py-5">
-          <div className="container py-md-3">
-            <div className="row">
-              <div className="grids3-info col-lg-4 col-md-6">
+    <section
+      className="grids-3 m-auto"
+      id="properties"
+      style={{ width: "75%" }}
+    >
+      <div id="grids3-block" className="py-5">
+        <div className="container py-md-3">
+          <div className="row">
+            {propertiesData.map((property, index) => (
+              <div className="grids3-info col-lg-4 col-md-6 mt-5" key={index}>
                 <Link id="link" to="/properties-single">
                   <img
-                    src="assets/images/g7.jpg"
+                    src={property.image}
                     className="img-fluid"
-                    alt=""
+                    alt={property.location}
                   />
                 </Link>
                 <p>Rent</p>
                 <div className="info-bg">
                   <h5>
                     <Link id="link" to="/properties-single">
-                      Bodakdev, Ahmedabad, Gujarat
+                      {property.location}
                     </Link>
                   </h5>
                   <ul>
                     <li>
-                      <span className="fa fa-bed"></span> 4 Beds
+                      <span className="fa fa-bed"></span> {property.beds} Beds
                     </li>
                     <li>
-                      <span className="fa fa-bath"></span> 3 Baths
+                      <span className="fa fa-bath"></span> {property.baths}{" "}
+                      Baths
                     </li>
                     <li>
-                      <span className="fa fa-share-square-o"></span> 1800 sq ft
+                      <span className="fa fa-share-square-o"></span>{" "}
+                      {property.size} sq ft
                     </li>
                   </ul>
                 </div>
               </div>
-
-              <div className="grids3-info col-lg-4 col-md-6 mt-md-0 mt-5">
-                <Link id="link" to="/properties-single">
-                  <img
-                    src="assets/images/g8.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </Link>
-                <p>Rent</p>
-                <div className="info-bg">
-                  <h5>
-                    <Link id="link" to="/properties-single">
-                      Jubilee Hills, Hyderabad, Telangana
-                    </Link>
-                  </h5>
-                  <ul>
-                    <li>
-                      <span className="fa fa-bed"></span> 3 Beds
-                    </li>
-                    <li>
-                      <span className="fa fa-bath"></span> 2 Baths
-                    </li>
-                    <li>
-                      <span className="fa fa-share-square-o"></span> 1500 sq ft
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="grids3-info col-lg-4 col-md-6 mt-lg-0 mt-5">
-                <Link id="link" to="/properties-single">
-                  <img
-                    src="assets/images/g9.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </Link>
-                <p>Rent</p>
-                <div className="info-bg">
-                  <h5>
-                    <Link id="link" to="/properties-single">
-                      Koramangala, Bangalore, Karnataka
-                    </Link>
-                  </h5>
-                  <ul>
-                    <li>
-                      <span className="fa fa-bed"></span> 4 Beds
-                    </li>
-                    <li>
-                      <span className="fa fa-bath"></span> 3 Baths
-                    </li>
-                    <li>
-                      <span className="fa fa-share-square-o"></span> 2000 sq ft
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="grids3-info col-lg-4 col-md-6 mt-5">
-                <Link id="link" to="/properties-single">
-                  <img
-                    src="assets/images/g10.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </Link>
-                <p>Rent</p>
-                <div className="info-bg">
-                  <h5>
-                    <Link id="link" to="/properties-single">
-                      Salt Lake, Kolkata, West Bengal
-                    </Link>
-                  </h5>
-                  <ul>
-                    <li>
-                      <span className="fa fa-bed"></span> 5 Beds
-                    </li>
-                    <li>
-                      <span className="fa fa-bath"></span> 3 Baths
-                    </li>
-                    <li>
-                      <span className="fa fa-share-square-o"></span> 2500 sq ft
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="grids3-info col-lg-4 col-md-6 mt-5">
-                <Link id="link" to="/properties-single">
-                  <img
-                    src="assets/images/g11.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </Link>
-                <p>Rent</p>
-                <div className="info-bg">
-                  <h5>
-                    <Link id="link" to="/properties-single">
-                      Viman Nagar, Pune, Maharashtra
-                    </Link>
-                  </h5>
-                  <ul>
-                    <li>
-                      <span className="fa fa-bed"></span> 2 Beds
-                    </li>
-                    <li>
-                      <span className="fa fa-bath"></span> 1 Bath
-                    </li>
-                    <li>
-                      <span className="fa fa-share-square-o"></span> 1300 sq ft
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="grids3-info col-lg-4 col-md-6 mt-5">
-                <Link id="link" to="/properties-single">
-                  <img
-                    src="assets/images/g12.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </Link>
-                <p>Rent</p>
-                <div className="info-bg">
-                  <h5>
-                    <Link id="link" to="/properties-single">
-                      Civil Lines, Jaipur, Rajasthan
-                    </Link>
-                  </h5>
-                  <ul>
-                    <li>
-                      <span className="fa fa-bed"></span> 4 Beds
-                    </li>
-                    <li>
-                      <span className="fa fa-bath"></span> 3 Baths
-                    </li>
-                    <li>
-                      <span className="fa fa-share-square-o"></span> 2200 sq ft
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
-}
+};
 
 export default Properties;

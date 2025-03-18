@@ -28,10 +28,14 @@ function Map() {
   return (
     <div className="map">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83937496646!2d77.06889719019768!3d28.527280343792554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1db1c5e722d1%3A0x9d8e7d6e3eb1f24d!2sDelhi%2C%20India!5e0!3m2!1sen!2sin!4v1619771578334!5m2!1sen!2sin"
-        allowFullScreen=""
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235026.89444410583!2d72.23154477939568!3d23.012930000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84d575eef3dd%3A0xa40a9723abd1c46d!2sS.g.highway%20%7C%20Commercial%20Estate%20Agent%20In%20Ahmedabad%20by%20Monarch%20Associates!5e0!3m2!1sen!2sin!4v1742290217106!5m2!1sen!2sin"
+        width={100}
+        height="300"
+        style={{ border: "0" }}
+        allowfullscreen=""
         loading="lazy"
-      />
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
   );
 }
@@ -41,22 +45,19 @@ function ContactForm() {
       <h4>Contact Us</h4>
       <div className="top-map row">
         <div className="map-content-9 col-md-8">
-          <form
-            action="https://sendmail.w3layouts.com/submitForm"
-            method="post"
-          >
+          <form action="http://localhost:8000/contactUs" method="post">
             <div className="twice-two">
               <input
                 type="text"
-                name="w3lName"
-                id="w3lName"
+                name="name"
+                id="name"
                 placeholder="Name"
                 required=""
               />
               <input
                 type="email"
-                name="w3lSender"
-                id="w3lSender"
+                name="email"
+                id="email"
                 placeholder="Email"
                 required=""
               />
@@ -64,22 +65,22 @@ function ContactForm() {
             <div className="twice-two">
               <input
                 type="text"
-                name="w3lPhone"
-                id="w3lPhone"
+                name="phone"
+                id="phone"
                 placeholder="Phone"
                 required=""
               />
               <input
                 type="text"
-                name="w3lSubject"
-                id="w3lSubject"
+                name="subject"
+                id="subject"
                 placeholder="Subject"
                 required=""
               />
             </div>
             <textarea
-              name="w3lMessage"
-              id="w3lMessage"
+              name="message"
+              id="message"
               placeholder="Message"
               required=""
             />
@@ -93,7 +94,9 @@ function ContactForm() {
             </div>
             <div className="cont-right">
               <h6>Address</h6>
-              <p>Estate Business, #12, Connaught Place, New Delhi, India.</p>
+              <p>
+                Estate Business, #123, S.G. Highway, Ahmedabad, Gujarat, India.
+              </p>
             </div>
           </div>
           <div className="cont-top mt-4 mb-4">
@@ -118,10 +121,10 @@ function ContactForm() {
               <p>
                 <Link
                   id="link"
-                  to="mailto:codewithpasshu@gmail.com"
+                  to="mailto:contact@realestate.in"
                   className="mail"
                 >
-                  codewithpasshu@gmail.com
+                  contact@realestate.in
                 </Link>
               </p>
             </div>

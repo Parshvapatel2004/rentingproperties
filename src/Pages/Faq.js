@@ -16,119 +16,81 @@ const Faq = () => {
 };
 
 function Main() {
+  const faqData = [
+    {
+      question: "How do I find a rental property?",
+      answer:
+        "You can browse our website, filter properties by location and budget, and contact the property owner or agent.",
+    },
+    {
+      question: "What documents do I need to rent a property?",
+      answer:
+        "Typically, you need identification, proof of income, and sometimes references or a credit check.",
+    },
+    {
+      question: "How much is the security deposit?",
+      answer:
+        "The security deposit varies by property, usually ranging from one to two months' rent.",
+    },
+    {
+      question: "Are utilities included in the rent?",
+      answer:
+        "Some properties include utilities, while others require tenants to pay separately. Check the listing for details.",
+    },
+    {
+      question: "Can I have pets in a rental property?",
+      answer:
+        "Pet policies vary by property. Some allow pets with a deposit, while others may have restrictions.",
+    },
+    {
+      question: "How long is the typical rental lease?",
+      answer:
+        "Most leases are for 6 to 12 months, but some properties offer flexible lease terms.",
+    },
+    {
+      question: "What should I do if I have a maintenance issue?",
+      answer:
+        "You should contact your landlord or property manager to report any maintenance issues as soon as possible.",
+    },
+  ];
+
   return (
-    <>
-      <section className="w3l-faq-1 container" style={{ padding: "0px 140px" }}>
-        <div className="w3l-faq-page py-5">
-          <div className="container py-md-3">
-            <div className="row faq-column-grid">
-              <div className="faq-column col-lg-6">
-                <h3>General Questions</h3>
-                <details open="">
-                  <summary>
-                    Should I talk with a bank before looking at homes?
-                    <span className="fa control-icon-expand fa-chevron-down"></span>
-                    <span className="fa control-icon-close fa-times"></span>
-                  </summary>
-                  <p>
-                    Yes, it is highly recommended to talk to a bank or lender
-                    before house hunting. Getting pre-approved for a mortgage
-                    helps you understand your budget and makes your offer more
-                    competitive when making a bid on a property.
-                  </p>
-                </details>
-                <details>
-                  <summary>
-                    Should I buy or continue to rent?
-                    <span className="fa control-icon-expand fa-chevron-down"></span>
-                    <span className="fa control-icon-close fa-times"></span>
-                  </summary>
-                  <p>
-                    It depends on your financial situation, long-term goals, and
-                    the real estate market. If you plan to stay in one place for
-                    several years and can afford a mortgage, buying may be a
-                    good option. Renting offers flexibility but doesn’t build
-                    equity.
-                  </p>
-                </details>
-                <details>
-                  <summary>
-                    Can I find a rent-to-own property?
-                    <span className="fa control-icon-expand fa-chevron-down"></span>
-                    <span className="fa control-icon-close fa-times"></span>
-                  </summary>
-                  <p>
-                    Yes, rent-to-own properties exist, but they are less common.
-                    These agreements allow renters to purchase the home after a
-                    set period while living in it. However, it's important to
-                    review the contract terms carefully.
-                  </p>
-                </details>
-                <details>
-                  <summary>
-                    Do I really need a realtor when buying a home?
-                    <span className="fa control-icon-expand fa-chevron-down"></span>
-                    <span className="fa control-icon-close fa-times"></span>
-                  </summary>
-                  <p>
-                    While it's not legally required, having a realtor can make
-                    the process smoother. A realtor can help with property
-                    searches, negotiations, legal paperwork, and ensuring you
-                    get a fair deal.
-                  </p>
-                </details>
-                <details>
-                  <summary>
-                    Who pays the realtor fees when buying a home?
-                    <span className="fa control-icon-expand fa-chevron-down"></span>
-                    <span className="fa control-icon-close fa-times"></span>
-                  </summary>
-                  <p>
-                    Typically, the seller pays the realtor fees for both the
-                    buyer’s and seller’s agents. These fees are usually included
-                    in the selling price of the home.
-                  </p>
-                </details>
-              </div>
-
-              <div className="faq-column col-lg-6 pl-lg-5 mt-lg-0 mt-5">
-                <h3>Extended Licenses Questions</h3>
-                <p>
-                  Some real estate transactions require extended licensing for
-                  commercial properties or specific legal contracts.
-                </p>
-                <ul>
-                  <li>
-                    <span className="fa fa-check pr-2"></span>License
-                    requirements depend on property type.
-                  </li>
-                  <li>
-                    <span className="fa fa-check pr-2"></span>Consult a legal
-                    expert before signing agreements.
-                  </li>
-                  <li>
-                    <span className="fa fa-check pr-2"></span>Ensure you have
-                    the necessary permits for commercial properties.
-                  </li>
-                </ul>
-
-                <h3 className="mt-5">Call for Support</h3>
-                <p>
-                  If you have any more questions, feel free to reach out to our
-                  support team for guidance on real estate transactions.
-                </p>
-                <h4>
-                  <Link id="link" to="tel:+919054800900">
-                    <span className="fa fa-phone pr-2"></span> +91 9054800900
-                  </Link>
-                </h4>
-              </div>
-            </div>
+    <section className="w3l-faq-1 container py-5" style={{ maxWidth: "900px" }}>
+      <div className="container py-md-3">
+        <h3 className="text-center mb-4">Frequently Asked Questions</h3>
+        <div className="row faq-column-grid">
+          <div className="faq-column col-lg-12">
+            {faqData.map((faq, index) => (
+              <FaqItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+              />
+            ))}
+            <h4 className="mt-4">Call for Support</h4>
+            <p>
+              If you have any more questions, feel free to reach out to our
+              support team.
+            </p>
+            <h5>
+              <Link id="link" to="tel:+919054800900">
+                <span className="fa fa-phone pr-2"></span> +91 9054800900
+              </Link>
+            </h5>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
+
+const FaqItem = ({ question, answer }) => {
+  return (
+    <details className="mb-3 border rounded p-3">
+      <summary className="fw-bold">{question}</summary>
+      <p className="mt-2">{answer}</p>
+    </details>
+  );
+};
 
 export default Faq;

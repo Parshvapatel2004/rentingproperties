@@ -1,180 +1,206 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Common/Header";
 import Banner from "../Common/Banner";
 import Footer from "../Common/Footer";
+
+const propertyDetails = {
+  images: [
+    "assets/images/bandra1.jpg",
+    "assets/images/bandra2.jpg",
+    "assets/images/bandra3.jpg",
+    "assets/images/bandra4.jpg",
+  ],
+  title: "Luxurious Property in Bandra, Mumbai",
+  description:
+    "This stunning property located in the heart of Bandra, Mumbai, offers a luxurious living experience with its spacious 2100 sqft area. The property features 8 rooms, including 5 bedrooms and 2 bathrooms, providing ample space for a large family. The modern design and high-quality finishes make this property a perfect blend of comfort and style.",
+  features: [
+    "Air Conditioning",
+    "Balcony",
+    "Front Yard",
+    "Pool",
+    "Attic",
+    "Broadband",
+    "Ground",
+    "Parking",
+    "Dining Space",
+    "Back Yard",
+  ],
+  coreDetails: {
+    size: "2100 sqft",
+    rooms: 8,
+    bedrooms: 5,
+    bathrooms: 2,
+    garage: 1,
+    yearBuilt: 2019,
+  },
+};
 
 const PropertiesSingle = () => {
   return (
     <div>
       <Header />
-      <Banner title={"Property"} pageName={"properties-single"} />
+      <Banner title={"Property Details"} pageName={"properties-single"} />
       <Main />
       <Footer />
     </div>
   );
 };
 
-function Main() {
+const Main = () => {
   return (
-    <>
-      <section
-        className="w3l-content-with-photo-11 m-auto"
-        style={{ width: "75%" }}
-      >
-        <div className="contentwithphoto-11 py-5">
-          <div className="container py-md-3">
-            <div className="contentwithphoto-11-content">
-              <div className="column contentwithphoto-img">
-                <div className="galleryContainer">
-                  <div className="gallery">
-                    <label className="thumbnailImage" htmlFor="c1">
+    <section
+      className="w3l-content-with-photo-11 m-auto"
+      style={{ width: "75%" }}
+    >
+      <div className="contentwithphoto-11 py-5">
+        <div className="container py-md-3">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <div className="galleryContainer">
+                <div className="gallery d-flex justify-content-center flex-wrap">
+                  {propertyDetails.images.map((img, index) => (
+                    <div key={index} className="large-image p-2">
                       <img
-                        src="assets/images/bandra1.jpg"
-                        className="img-responsive"
-                        alt=""
+                        src={img}
+                        className="img-fluid rounded shadow"
+                        style={{
+                          width: "100%",
+                          maxHeight: "500px",
+                          objectFit: "cover",
+                        }}
+                        alt={`Property Image ${index + 1}`}
                       />
-                    </label>
-                  </div>
-                  <div className="thumbnails">
-                    <label className="thumbnailImage" htmlFor="c1">
-                      <img
-                        src="assets/images/bandra2.jpg"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </label>
-                    <label className="thumbnailImage" htmlFor="c2">
-                      <img
-                        src="assets/images/bandra3.jpg"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </label>
-                    <label className="thumbnailImage" htmlFor="c3">
-                      <img
-                        src="assets/images/bandra4.jpg"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </label>
-                  </div>
+                    </div>
+                  ))}
                 </div>
-              </div>
-              <div className="contentwithphoto-top">
-                <div className="column contentwithphoto-text mt-4">
-                  <h3>Description</h3>
-                  <p>
-                    This stunning property located in the heart of Bandra,
-                    Mumbai, offers a luxurious living experience with its
-                    spacious 2100 sqft area. The property features 8 rooms,
-                    including 5 bedrooms and 2 bathrooms, providing ample space
-                    for a large family. The modern design and high-quality
-                    finishes make this property a perfect blend of comfort and
-                    style.
-                  </p>
-                  <p>
-                    The property boasts a range of amenities, including air
-                    conditioning, a balcony, a front yard, and a pool, ensuring
-                    a comfortable and enjoyable living experience. The garage
-                    provides secure parking for your vehicle, and the property
-                    is equipped with broadband for high-speed internet access.
-                  </p>
-                  <p>
-                    Built in 2019, this property is relatively new and offers
-                    all the modern conveniences you would expect from a high-end
-                    home. The spacious attic and dining space add to the charm
-                    of this beautiful property, making it an ideal choice for
-                    those looking for a luxurious and comfortable living space
-                    in Mumbai.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="work">
-              <h3>Challenge & Solutions</h3>
-              <p>
-                One of the main challenges of living in a bustling city like
-                Mumbai is finding a property that offers both space and modern
-                amenities. This property addresses these challenges by providing
-                a spacious living area with all the modern conveniences you need
-                for a comfortable lifestyle. The strategic location in Bandra
-                ensures easy access to all the essential services and
-                entertainment options, making it an ideal choice for urban
-                living.
-              </p>
-            </div>
-            <div className="column con-bottom row mt-5">
-              <div className="con-bottom-left col-md-6">
-                <h4>Core Details</h4>
-                <ul className="mt-4">
-                  <li>
-                    <span className="title-text">Property Size : </span>
-                    <span className="feature-count"> 2100 sqft</span>
-                  </li>
-                  <li>
-                    <span className="title-text">Total Rooms : </span>
-                    <span className="feature-count">8</span>
-                  </li>
-                  <li>
-                    <span className="title-text">Bedrooms : </span>
-                    <span className="feature-count">5</span>
-                  </li>
-                  <li>
-                    <span className="title-text">Bathrooms : </span>{" "}
-                    <span className="feature-count">2</span>
-                  </li>
-                  <li>
-                    <span className="title-text">Garage : </span>{" "}
-                    <span className="feature-count">1</span>
-                  </li>
-                  <li>
-                    <span className="title-text">Year Build : </span>{" "}
-                    <span className="feature-count">2019</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="con-bottom-right col-md-6">
-                <h4>More Features</h4>
-                <ul className="mt-4">
-                  <li>
-                    <span className="fa fa-check"></span> Air conditioning
-                  </li>
-                  <li>
-                    <span className="fa fa-check"></span> Balcony
-                  </li>
-                  <li>
-                    <span className="fa fa-check"></span> Front Yard
-                  </li>
-                  <li>
-                    <span className="fa fa-check"></span> Pool
-                  </li>
-                  <li>
-                    <span className="fa fa-check"></span> Attic
-                  </li>
-                  <li>
-                    <span className="fa fa-check"></span> Broadband
-                  </li>
-                  <li>
-                    <span className="fa fa-check"></span> Ground
-                  </li>
-                  <li>
-                    <span className="fa fa-check"></span> Parking
-                  </li>
-                  <li>
-                    <span className="fa fa-check"></span> Dining Space
-                  </li>
-                  <li>
-                    <span className="fa fa-check"></span> Back Yard
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
+          <div className="row mt-5">
+            <div className="col-md-6">
+              <h3>Description</h3>
+              <p>{propertyDetails.description}</p>
+              <h3>Challenge & Solutions</h3>
+              <p>
+                Finding a property that offers both space and modern amenities
+                in Mumbai can be challenging. This property ensures easy access
+                to essential services while offering luxurious features.
+              </p>
+            </div>
+            <div className="col-md-6">
+              <h4>Core Details</h4>
+              <ul>
+                {Object.entries(propertyDetails.coreDetails).map(
+                  ([key, value], index) => (
+                    <li key={index}>
+                      <span className="title-text">
+                        {key.replace(/([A-Z])/g, " $1").trim()}:
+                      </span>
+                      <span className="feature-count"> {value}</span>
+                    </li>
+                  )
+                )}
+              </ul>
+            </div>
+          </div>
+          <div className="row mt-5">
+            <div className="col-md-12">
+              <h4>More Features</h4>
+              <ul className="list-inline">
+                {propertyDetails.features.map((feature, index) => (
+                  <li
+                    key={index}
+                    className="list-inline-item m-2 p-2 border rounded shadow-sm bg-light"
+                  >
+                    <span className="fa fa-check"></span> {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Rent This Property Form */}
+          <RentForm />
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
-}
+};
+
+const RentForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    date: "",
+  });
+  const [message, setMessage] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setMessage("Your request has been submitted successfully!");
+    setFormData({ name: "", email: "", phone: "", date: "" });
+  };
+
+  return (
+    <div className="rent-form mt-5 p-4 shadow-sm bg-light">
+      <h3>Rent This Property</h3>
+      {message && <p className="alert alert-success">{message}</p>}
+      <form onSubmit={handleSubmit}>
+        <div className="mb-3">
+          <label className="form-label">Full Name</label>
+          <input
+            type="text"
+            className="form-control"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label className="form-label">Email</label>
+          <input
+            type="email"
+            className="form-control"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label className="form-label">Phone Number</label>
+          <input
+            type="tel"
+            className="form-control"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label className="form-label">Move-in Date</label>
+          <input
+            type="date"
+            className="form-control"
+            name="date"
+            value={formData.date}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <button type="submit" className="btn btn-primary">
+          Submit Inquiry
+        </button>
+      </form>
+    </div>
+  );
+};
 
 export default PropertiesSingle;
