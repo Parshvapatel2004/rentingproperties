@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUP = () => {
   return (
@@ -9,6 +9,11 @@ const SignUP = () => {
   );
 };
 function Main() {
+  const navigate = useNavigate();
+  const handleSignUp = () => {
+    alert("Register Successfully");
+    navigate("/login");
+  };
   return (
     <div>
       <section className="w3l-forms-23">
@@ -19,6 +24,7 @@ function Main() {
                 <span>Renting </span>Properties
               </Link>
             </div>
+
             <div className="d-grid forms23-grids">
               <div className="form23">
                 <h6>Register a new account</h6>
@@ -26,13 +32,13 @@ function Main() {
                 <form action="#" method="GET">
                   <input
                     type="text"
-                    name="username"
+                    name="name"
                     placeholder="Name"
                     required="required"
                   />
                   <input
                     type="email"
-                    name="username"
+                    name="email"
                     placeholder="Email"
                     required="required"
                   />
@@ -42,59 +48,32 @@ function Main() {
                     placeholder="Password"
                     required="required"
                   />
-
-                  <button type="submit">Sign Up</button>
+                  <button type="submit" onClick={handleSignUp}>
+                    Sign Up
+                  </button>
                 </form>
-                <p>
-                  Are you a member?{" "}
+
+                <p className="text-center pt-2">
+                  Already have an account?{" "}
                   <Link id="link" to="/login">
                     Login now
                   </Link>
                 </p>
               </div>
-              <div className="frm-tp">
-                <div className="form23-text">
-                  <h6>Connect with</h6>
-                  <div className="form23-text-top">
-                    <Link id="link" to="/#facebook">
-                      <div className="signin facebook">
-                        <span
-                          className="fa fa-facebook"
-                          aria-hidden="true"
-                        ></span>
-                        <p className="action">Facebook</p>
-                      </div>
-                    </Link>
-                    <Link id="link" to="/#google-plus">
-                      <div className="signin google-plus">
-                        <span
-                          className="fa fa-google-plus"
-                          aria-hidden="true"
-                        ></span>
-                        <p className="action">Google</p>
-                      </div>
-                    </Link>
-                    <Link id="link" to="/#twitter">
-                      <div className="signin twitter">
-                        <span
-                          className="fa fa-twitter"
-                          aria-hidden="true"
-                        ></span>
-                        <p className="action">Twitter</p>
-                      </div>
-                    </Link>
-                    <Link id="link" to="/#linkedin">
-                      <div className="signin linkedin">
-                        <span
-                          className="fa fa-linkedin"
-                          aria-hidden="true"
-                        ></span>
-                        <p className="action">Linkedin</p>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              {/* <div className="frm-tp">
+                                <div className="form23-text">
+                                    <h6>Connect with</h6>
+                                    <div className="form23-text-top">
+                                        <Link id="link" to="/#google-plus" className='m-auto'>
+                                            <div className="signin google-plus">
+                                                <span className="fa fa-google" aria-hidden="true"></span>
+                                                <p className="action m-2">Google</p>
+                                            </div>
+                                        </Link>
+                                       
+                                    </div>
+                                </div>
+                            </div> */}
             </div>
           </div>
         </div>

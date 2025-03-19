@@ -143,6 +143,13 @@ const Header = () => {
                   <ul className="dropdown-menu dropdown-menu-end shadow border-0">
                     <li>
                       <Link
+                        className="dropdown-item text-warring fw-bold"
+                        to={"/signup"}
+                      >
+                        Register
+                      </Link>
+                      <hr className="dropdown-divider" />
+                      <Link
                         className="dropdown-item text-primary fw-bold"
                         to={"/login"}
                       >

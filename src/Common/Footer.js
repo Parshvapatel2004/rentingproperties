@@ -151,8 +151,8 @@ const Footer = () => {
           style={{ backgroundColor: "#212529" }}
         >
           <div className="container">
-            <p className="copy-footer-28 text-white pt-3">
-              <hr />
+            <hr />
+            <p className="copy-footer-28 text-white">
               &copy; 2025 Renting Properties. All Rights Reserved.
             </p>
           </div>

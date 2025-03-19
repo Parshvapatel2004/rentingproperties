@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
   return (
     <div>
@@ -10,6 +9,11 @@ const Login = () => {
 };
 
 function Main() {
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    alert("Login successfully");
+    navigate("/");
+  };
   return (
     <>
       <section className="w3l-forms-23">
@@ -22,8 +26,7 @@ function Main() {
             </div>
             <div className="d-grid forms23-grids">
               <div className="form23">
-                <h6>Login with your site account</h6>
-
+                <h6>Login with your account</h6>
                 <form action="#" method="GET">
                   <input
                     type="email"
@@ -40,58 +43,31 @@ function Main() {
                   <Link id="link" to="/#URL">
                     Forgot your password?
                   </Link>
-                  <button type="submit">Login</button>
+                  <button type="submit" onClick={handleLogin}>
+                    Login
+                  </button>
                 </form>
-                <p>
-                  Not a member yet?{" "}
+                <p className="text-center pt-2">
+                  Not have an account yet?{" "}
                   <Link id="link" to="/signup">
                     Register now
                   </Link>
                 </p>
               </div>
-              <div className="frm-tp">
-                <div className="form23-text">
-                  <h6>Connect with</h6>
-                  <div className="form23-text-top">
-                    <Link id="link" to="/#facebook">
-                      <div className="signin facebook">
-                        <span
-                          className="fa fa-facebook"
-                          aria-hidden="true"
-                        ></span>
-                        <p className="action">Facebook</p>
-                      </div>
-                    </Link>
-                    <Link id="link" to="/#google-plus">
-                      <div className="signin google-plus">
-                        <span
-                          className="fa fa-google-plus"
-                          aria-hidden="true"
-                        ></span>
-                        <p className="action">Google</p>
-                      </div>
-                    </Link>
-                    <Link id="link" to="/#twitter">
-                      <div className="signin twitter">
-                        <span
-                          className="fa fa-twitter"
-                          aria-hidden="true"
-                        ></span>
-                        <p className="action">Twitter</p>
-                      </div>
-                    </Link>
-                    <Link id="link" to="/#linkedin">
-                      <div className="signin linkedin">
-                        <span
-                          className="fa fa-linkedin"
-                          aria-hidden="true"
-                        ></span>
-                        <p className="action">Linkedin</p>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+
+              {/* <div className="frm-tp">
+                                <div className="form23-text">
+                                    <h6>Connect with</h6>
+                                    <div className="form23-text-top">
+                                        <Link id="link" to="/#google-plus">
+                                            <div className="signin google-plus">
+                                                <span className="fa fa-google-plus" aria-hidden="true"></span>
+                                                <p className="action">Google</p>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div> */}
             </div>
           </div>
         </div>
