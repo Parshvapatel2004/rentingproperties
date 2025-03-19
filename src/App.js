@@ -21,6 +21,7 @@ import ManagePayments from "./Pages/ManagePayments";
 import ManageBooking from "./Pages/ManageBooking";
 import ManageRequest from "./Pages/ManageRequest";
 import MyBookings from "./Pages/MyBookings";
+import Booking from "./Pages/Booking";
 
 const App = () => {
   return (
@@ -47,6 +48,7 @@ const App = () => {
           <Route path="/manage_booking" element={<ManageBooking />} />
           <Route path="/manage_request" element={<ManageRequest />} />
           <Route path="/my_bookings" element={<MyBookings />} />
+          <Route path="/booking" element={<Booking />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

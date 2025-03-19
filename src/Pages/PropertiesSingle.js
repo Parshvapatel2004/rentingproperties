@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Header from "../Common/Header";
 import Banner from "../Common/Banner";
 import Footer from "../Common/Footer";
+import { Link } from "react-router-dom";
 
 const propertyDetails = {
   images: [
@@ -47,6 +48,7 @@ const PropertiesSingle = () => {
 };
 
 const Main = () => {
+  const [rentForm, setRentForm] = useState(false);
   return (
     <section
       className="w3l-content-with-photo-11 m-auto"
@@ -120,7 +122,27 @@ const Main = () => {
           </div>
 
           {/* Rent This Property Form */}
-          <RentForm />
+          <div className="row mt-5">
+            <div className="col-md-12 d-flex justify-content-center gap-3">
+              <Link to={"/"} className="btn btn-primary btn-lg">
+                Book Now
+              </Link>
+              <button
+                className="btn btn-outline-primary btn-lg"
+                onClick={() => {
+                  document
+                    .querySelector(".rent-form")
+                    .scrollIntoView({ behavior: "smooth" });
+                  setRentForm(true);
+                }}
+              >
+                Make Inquiry
+              </button>
+            </div>
+          </div>
+
+          {/* Rent This Property Form */}
+          <div className="rent-form">{rentForm ? <RentForm /> : null}</div>
         </div>
       </div>
     </section>
