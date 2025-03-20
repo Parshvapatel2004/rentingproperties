@@ -35,16 +35,16 @@ const App = () => {
           <Route path="/signup" element={<SignUP />} />
           <Route path="/login" element={<Login />} />
           <Route path="/ecommerce" element={<Ecommerce />} />
-          <Route path="/ecommerce-single" element={<EcommerceSingle />} />
+          <Route path="/ecommerce_single" element={<EcommerceSingle />} />
           <Route path="/properties" element={<Properties />} />
-          <Route path="/properties-single" element={<PropertiesSingle />} />
-          <Route path="/find-property" element={<FindProperty />} />
-          <Route path="/search-results" element={<SearchResults />} />
+          <Route path="/properties_single" element={<PropertiesSingle />} />
+          <Route path="/find_property" element={<FindProperty />} />
+          <Route path="/search_results" element={<SearchResults />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/owner_profile" element={<OwnerProfile />} />
           <Route path="/upload_property" element={<UploadProperty />} />
-          <Route path="/manage_payments" element={<ManagePayments />} />
+          <Route path="/view_payments" element={<ManagePayments />} />
           <Route path="/manage_booking" element={<ManageBooking />} />
           <Route path="/manage_request" element={<ManageRequest />} />
           <Route path="/my_bookings" element={<MyBookings />} />

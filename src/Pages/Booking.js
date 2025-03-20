@@ -60,7 +60,7 @@ function Main() {
   // Handle Booking Submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/");
+    navigate("/my_bookings");
 
     // Validate input fields
     if (

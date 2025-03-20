@@ -69,7 +69,7 @@ function Main() {
       className="container mt-5"
       style={{ minHeight: "90vh", marginBottom: "70px" }}
     >
-      <h2 className="text-center mb-4">Manage Payments</h2>
+      <h2 className="text-center mb-4">Payment Record</h2>
 
       <div className="table-responsive">
         <table className="table table-bordered table-hover text-center">

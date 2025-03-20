@@ -271,7 +271,7 @@ const PropertyInfo = () => {
       baths: 3,
       area: "1800 sq ft",
       image: "assets/images/g12.jpg",
-      link: "/properties-single",
+      link: "/properties_single",
     },
     {
       title: "Spacious Villa in Whitefield",
@@ -280,7 +280,7 @@ const PropertyInfo = () => {
       baths: 2,
       area: "2200 sq ft",
       image: "assets/images/g11.jpg",
-      link: "/properties-single",
+      link: "/properties_single",
     },
     {
       title: "Modern Flat in Connaught Place",

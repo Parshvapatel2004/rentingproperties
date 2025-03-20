@@ -40,7 +40,7 @@ const PropertiesSingle = () => {
   return (
     <div>
       <Header />
-      <Banner title={"Property Details"} pageName={"properties-single"} />
+      <Banner title={"Property Details"} pageName={"properties_single"} />
       <Main />
       <Footer />
     </div>
