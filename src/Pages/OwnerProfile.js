@@ -21,7 +21,7 @@ function Main() {
   const [user, setUser] = useState({
     name: "Jay Patel",
     email: "jaypatel@gmail.com",
-    phone: "+1 234 567 890",
+    phone: "+91 9054800900",
     bio: "Real Estate Investor & Property Owner | 5+ Years in Rental Business",
     profilePic: "/assets/images/te1.jpg",
     identityType: "",
