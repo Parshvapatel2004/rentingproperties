@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
   const [login, setLogin] = useState(true);
+  const [userType, setUserType] = useState("owner"); // "owner" or "user"
 
   // Handle Logout
   const handleLogout = () => {
@@ -16,7 +17,7 @@ const Header = () => {
     <section className="w3l-bootstrap-header">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-lg-3 py-2 shadow-sm">
         <div className="container">
-          <Link id="link" className="navbar-brand text-light fw-bold" to="/">
+          <Link className="navbar-brand text-light fw-bold" to="/">
             <span style={{ color: "#f8b400" }}>Renting</span> Properties
           </Link>
 
@@ -37,66 +38,91 @@ const Header = () => {
               className="navbar-nav me-auto ms-auto"
               style={{ fontSize: "18px" }}
             >
-              <li className="nav-item active">
-                <Link id="link" className="nav-link text-light" to="/">
+              <li className="nav-item">
+                <Link className="nav-link text-light" to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link id="link" className="nav-link text-light" to="/about">
+                <Link className="nav-link text-light" to="/about">
                   About
                 </Link>
               </li>
 
-              {/* Properties Dropdown */}
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle text-light"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Properties
-                </a>
-                <ul className="dropdown-menu border-0 shadow-lg">
-                  <li>
-                    <Link id="link" className="dropdown-item" to="/properties">
-                      All Properties
+              {/* Conditional Navigation for Owner & User */}
+              {userType === "owner" ? (
+                <>
+                  {/* Properties Dropdown */}
+                  <li className="nav-item dropdown">
+                    <a
+                      className="nav-link dropdown-toggle text-light"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Properties
+                    </a>
+                    <ul className="dropdown-menu border-0 shadow-lg">
+                      <li>
+                        <Link
+                          id="link"
+                          className="dropdown-item"
+                          to="/upload_property"
+                        >
+                          List Property
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          id="link"
+                          className="dropdown-item"
+                          to="/view_property"
+                        >
+                          View Listing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link id="link" className="dropdown-item" to="/faq">
+                          FAQ
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link text-light" to="/view_payments">
+                      View Payments
                     </Link>
                   </li>
-                  <li>
-                    <Link id="link" className="dropdown-item" to="/faq">
-                      FAQ
+                </>
+              ) : (
+                <>
+                  <li className="nav-item">
+                    {/* <Link id="link" className="btn btn-warning fw-bold" to="/find_property">
+                    <span className="fa fa-search"></span> Find Property
+                    </Link> */}
+                    <Link className="nav-link text-light" to="/find_property">
+                      Find Property
                     </Link>
                   </li>
-                </ul>
-              </li>
+                  <li className="nav-item">
+                    <Link className="nav-link text-light" to="/my_bookings">
+                      My Bookings
+                    </Link>
+                  </li>
+                </>
+              )}
 
               <li className="nav-item">
-                <Link id="link" className="nav-link text-light" to="/contact">
+                <Link className="nav-link text-light" to="/contact">
                   Contact
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link id="link" className="nav-link text-light" to="/services">
-                  Services
                 </Link>
               </li>
             </ul>
 
-            {/* Search & Profile Dropdown */}
+            {/* Profile Dropdown */}
             <div className="d-flex align-items-center">
-              <Link
-                id="link"
-                className="btn btn-warning me-3 fw-bold"
-                to="/find-property"
-              >
-                <span className="fa fa-search"></span> Find Property
-              </Link>
-
-              {/* Profile Dropdown */}
               <div className="dropdown">
                 <button
                   className="btn btn-outline-light dropdown-toggle d-flex align-items-center"
@@ -118,12 +144,18 @@ const Header = () => {
                 {login ? (
                   <ul className="dropdown-menu dropdown-menu-end shadow border-0">
                     <li>
-                      <Link className="dropdown-item" to="/profile">
+                      <Link
+                        className="dropdown-item"
+                        to={userType === "user" ? "/profile" : "/owner_profile"}
+                      >
                         View Profile
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="/profile">
+                      <Link
+                        className="dropdown-item"
+                        to={userType === "user" ? "/profile" : "/owner_profile"}
+                      >
                         Edit Profile
                       </Link>
                     </li>
@@ -143,15 +175,15 @@ const Header = () => {
                   <ul className="dropdown-menu dropdown-menu-end shadow border-0">
                     <li>
                       <Link
-                        className="dropdown-item text-warring fw-bold"
-                        to={"/signup"}
+                        className="dropdown-item text-warning fw-bold"
+                        to="/signup"
                       >
                         Register
                       </Link>
                       <hr className="dropdown-divider" />
                       <Link
                         className="dropdown-item text-primary fw-bold"
-                        to={"/login"}
+                        to="/login"
                       >
                         Login
                       </Link>
