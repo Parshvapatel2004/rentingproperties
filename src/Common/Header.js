@@ -78,7 +78,7 @@ const Header = () => {
                         <Link
                           id="link"
                           className="dropdown-item"
-                          to="/view_property"
+                          to="/manage_property"
                         >
                           View Listing
                         </Link>

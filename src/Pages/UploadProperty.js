@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
 import Header from "../Common/Header";
 import Footer from "../Common/Footer";
+import { useNavigate } from "react-router-dom";
 
 const UploadProperty = () => {
   return (
@@ -14,6 +14,9 @@ const UploadProperty = () => {
 };
 
 function Main() {
+  const navigate = useNavigate();
+  const [message, setMessage] = useState("");
+
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -21,7 +24,7 @@ function Main() {
     address: "",
     zipCode: "",
     propertyType: "",
-    category: "",
+    category: "For rent",
     size: "",
     price: "",
     bedrooms: "",
@@ -71,11 +74,14 @@ function Main() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Submitted:", formData);
+    setMessage("Property has been uploaded Successfully");
+    navigate("/");
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container my-5">
       <h2 className="text-center mb-4">Upload Property</h2>
+      {message && <p className="alert alert-success">{message}</p>}
       <form
         onSubmit={handleSubmit}
         className="p-4 border rounded shadow bg-white"
@@ -155,26 +161,26 @@ function Main() {
                 className="form-control"
               >
                 <option value="">Select Type</option>
-                <option value="Apartment">Apartment</option>
-                <option value="Villa">Villa</option>
-                <option value="Independent House">Independent House</option>
+                <option value="Residential ">residential</option>
                 <option value="Commercial">Commercial Property</option>
               </select>
             </div>
 
             <div className="form-group mt-3">
               <label>Category:</label>
-              <select
-                name="category"
-                required
-                onChange={handleChange}
-                className="form-control"
-              >
+              <p name="category" value="For Rent" className="form-control">
+                For Rent
+              </p>
+            </div>
+            {/* 
+            <div className="form-group mt-3">
+              <label>Category:</label>
+              <select name="category" required onChange={handleChange} className="form-control">
                 <option value="">Select Category</option>
                 <option value="For Sale">For Sale</option>
                 <option value="For Rent">For Rent</option>
               </select>
-            </div>
+            </div> */}
 
             <div className="form-group mt-3">
               <label>Size (sq ft):</label>
@@ -275,34 +281,21 @@ function Main() {
           </small>
         </div>
 
-        {/* Identity Verification */}
-        <h4 className="mt-4">Identity Verification</h4>
-        <div className="form-group">
-          <label>Identity Type:</label>
-          <select
-            name="identityType"
-            required
-            onChange={handleChange}
-            className="form-control"
-          >
-            <option value="">Select ID Type</option>
-            <option value="Aadhaar">Aadhaar</option>
-            <option value="PAN">PAN</option>
-            <option value="Passport">Passport</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-
-        <div className="form-group mt-3">
-          <label>Identity ID Number:</label>
-          <input
-            type="text"
-            name="identityId"
-            placeholder="Enter ID number"
-            required
-            onChange={handleChange}
-            className="form-control"
-          />
+        {/* Amenities */}
+        <label>Amenities:</label>
+        <div className="mb-3">
+          {amenitiesList.map((amenity, index) => (
+            <div key={index} className="form-check">
+              <input
+                type="checkbox"
+                name="amenities"
+                value={amenity}
+                onChange={handleAmenitiesChange}
+                className="form-check-input"
+              />
+              <label className="form-check-label">{amenity}</label>
+            </div>
+          ))}
         </div>
 
         {/* Submit Button */}
