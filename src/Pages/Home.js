@@ -234,34 +234,34 @@ const InfoBlock = () => {
 const Specification = () => {
   return (
     <>
-      <section className="w3l-specifications-9">
-        <div className="main-w3 py-5" id="stats">
-          <div className="container text-center py-md-3 mt-4">
-            <div className="main-cont-wthree-fea row">
-              <div className="grids-speci1 col-lg-3 col-6">
-                <h3 className="title-spe">445</h3>
-                <p>RESIDENTAL PROPERTIES TO RENT</p>
+      <section className="specifications">
+        <div className="container text-center">
+          <div className="scrolling-container">
+            <div className="scrolling-content">
+              <div className="spec-box">
+                <h3>445</h3>
+                <p>Residential Properties to Rent</p>
               </div>
-              <div className="grids-speci1 midd-eff-spe col-lg-3 col-6">
-                <h3 className="title-spe">350</h3>
-                <p>COMMERCIAL PROPERTIES FOR RENT</p>
+              <div className="spec-box">
+                <h3>350</h3>
+                <p>Commercial Properties for Rent</p>
               </div>
-              <div className="grids-speci1 las-but col-lg-3 col-6  mt-lg-0 mt-4">
-                <h3 className="title-spe">530</h3>
-                <p>PROPERTIES UNDER OFFER</p>
+              <div className="spec-box">
+                <h3>530</h3>
+                <p>Properties Under Offer</p>
               </div>
-              <div className="grids-speci1 las-t col-lg-3 col-6  mt-lg-0 mt-4">
-                <h3 className="title-spe">25k </h3>
-                <p>SQARE. FT</p>
+              <div className="spec-box">
+                <h3>25K+</h3>
+                <p>Square Feet Managed</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <hr className="opacity-25" />
     </>
   );
 };
-
 const PropertyInfo = () => {
   const properties = [
     {
@@ -289,7 +289,7 @@ const PropertyInfo = () => {
       baths: 2,
       area: "1400 sq ft",
       image: "assets/images/g10.jpg",
-      link: "/properties-single",
+      link: "/properties_single",
     },
     {
       title: "Beachside Villa in ECR",
@@ -298,7 +298,7 @@ const PropertyInfo = () => {
       baths: 4,
       area: "2500 sq ft",
       image: "assets/images/g9.jpg",
-      link: "/properties-single",
+      link: "/properties_single",
     },
     {
       title: "Heritage Home in Salt Lake",
@@ -307,7 +307,7 @@ const PropertyInfo = () => {
       baths: 2,
       area: "1900 sq ft",
       image: "assets/images/g8.jpg",
-      link: "/properties-single",
+      link: "/properties_single",
     },
     {
       title: "Premium Bungalow in Jubilee Hills",
@@ -316,7 +316,7 @@ const PropertyInfo = () => {
       baths: 5,
       area: "3000 sq ft",
       image: "assets/images/g7.jpg",
-      link: "/properties-single",
+      link: "/properties_single",
     },
   ];
   return (

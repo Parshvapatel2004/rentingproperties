@@ -9862,25 +9862,32 @@ h4.sub-title {
   -moz-transition: 0.3s ease-in;
   -ms-transition: 0.3s ease-in; }
 
-.w3l-main-slider .banner-view {
-  background: url(../images/banner-1.jpg) no-repeat center;
-  background-size: cover;
+.w3l-main-slider .banner-view  {
   min-height: 650px;
   position: relative;
   z-index: 0;
   display: grid;
   align-items: center; }
 
+.w3l-main-slider .banner-top0 {
+  background: url(../images/bandra1.jpg) no-repeat center;
+  background-size: cover;
+} 
+
 .w3l-main-slider .banner-top1 {
   background: url(../images/banner-2.jpg) no-repeat center;
   background-size: cover; }
 
 .w3l-main-slider .banner-top2 {
-  background: url(../images/banner-4.jpg) no-repeat center;
+  background: url(../images/banner-3.jpg) no-repeat center;
   background-size: cover; }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/banner-3.jpg) no-repeat center;
+  background: url(../images/banner-4.jpg) no-repeat center;
+  background-size: cover; }
+
+.w3l-main-slider .banner-top4 {
+  background: url(../images/banner-1.jpg) no-repeat center;
   background-size: cover; }
 
 .w3l-main-slider .csslider > input {
@@ -10217,269 +10224,6 @@ h4.sub-title {
   .w3l-main-slider .banner-info-bg h5 {
     font-size: 20px; } }
 
-/**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
-.owl-carousel,
-.owl-carousel .owl-item {
-  -webkit-tap-highlight-color: transparent;
-  position: relative; }
-
-.owl-carousel {
-  display: none;
-  width: 100%;
-  z-index: 1; }
-
-.owl-carousel .owl-stage {
-  position: relative;
-  touch-action: manipulation;
-  -moz-backface-visibility: hidden; }
-
-.owl-carousel .owl-stage:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
-
-.owl-carousel .owl-stage-outer {
-  position: relative;
-  overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0); }
-
-.owl-carousel .owl-item,
-.owl-carousel .owl-wrapper {
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0); }
-
-.owl-carousel .owl-item {
-  min-height: 1px;
-  float: left;
-  -webkit-backface-visibility: hidden;
-  -webkit-touch-callout: none; }
-
-.owl-carousel .owl-dots.disabled,
-.owl-carousel .owl-nav.disabled {
-  display: block; }
-
-.no-js .owl-carousel,
-.owl-carousel.owl-loaded {
-  display: block; }
-
-.owl-carousel .owl-dot,
-.owl-carousel .owl-nav .owl-next,
-.owl-carousel .owl-nav .owl-prev {
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot {
-  border: none; }
-
-.owl-carousel.owl-loading {
-  opacity: 0;
-  display: block; }
-
-.owl-carousel.owl-hidden {
-  opacity: 0; }
-
-.owl-carousel.owl-refresh .owl-item {
-  visibility: hidden; }
-
-.owl-carousel.owl-drag .owl-item {
-  touch-action: pan-y;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.owl-carousel.owl-grab {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: grab; }
-
-.owl-carousel.owl-rtl {
-  direction: rtl; }
-
-.owl-carousel.owl-rtl .owl-item {
-  float: right; }
-
-.owl-carousel .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-.owl-carousel .owl-animated-in {
-  z-index: 0; }
-
-.owl-carousel .owl-animated-out {
-  z-index: 1; }
-
-.owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut; }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-.owl-height {
-  transition: height .5s ease-in-out; }
-
-.owl-carousel .owl-item .owl-lazy {
-  opacity: 0;
-  transition: opacity .4s ease; }
-
-.owl-carousel .owl-item .owl-lazy:not([src]),
-.owl-carousel .owl-item .owl-lazy[src^=""] {
-  max-height: 0; }
-
-.owl-carousel .owl-item img.owl-lazy {
-  transform-style: preserve-3d; }
-
-.owl-carousel .owl-video-wrapper {
-  position: relative;
-  height: 100%;
-  background: #000; }
-
-.owl-carousel .owl-video-play-icon {
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  left: 50%;
-  top: 50%;
-  margin-left: -40px;
-  margin-top: -40px;
-  background: url(owl.video.play.html) no-repeat;
-  cursor: pointer;
-  z-index: 1;
-  -webkit-backface-visibility: hidden;
-  transition: transform .1s ease; }
-
-.owl-carousel .owl-video-play-icon:hover {
-  transform: scale(1.3, 1.3); }
-
-.owl-carousel .owl-video-playing .owl-video-play-icon,
-.owl-carousel .owl-video-playing .owl-video-tn {
-  display: none; }
-
-.owl-carousel .owl-video-tn {
-  opacity: 0;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transition: opacity .4s ease; }
-
-.owl-carousel .owl-video-frame {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  width: 100%; }
-
-/**
-  * Owl Carousel v2.3.4
-  * Copyright 2013-2018 David Deutsch
-  * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
-  */
-.owl-theme .owl-dots,
-.owl-theme .owl-nav {
-  text-align: center;
-  -webkit-tap-highlight-color: transparent; }
-
-.owl-dots {
-  margin-top: 50px;
-  display: none; }
-
-.owl-theme .owl-nav [class*=owl-] {
-  color: #fff;
-  font-size: 35px;
-  margin: 0px;
-  padding: 0 14px;
-  background: rgba(255, 239, 236, 0.33);
-  display: inline-block;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  height: 50px;
-  line-height: 50px; }
-
-.owl-theme .owl-nav [class*=owl-]:hover {
-  background: var(--title-color);
-  opacity: .8;
-  text-decoration: none;
-  outline: none;
-  box-shadow: none;
-  transition: 0.3s ease-in-out; }
-
-.owl-theme .owl-nav [class*=owl-]:focus,
-.owl-theme:focus,
-.owl-dots:focus,
-.owl-dot:focus {
-  outline: none;
-  box-shadow: none; }
-
-.owl-theme .owl-nav .disabled {
-  opacity: .5;
-  cursor: default; }
-
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 30px; }
-
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1; }
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 9px;
-  height: 9px;
-  margin: 5px 5px;
-  background: #fff;
-  display: block;
-  border: 1px solid #304659;
-  -webkit-backface-visibility: visible;
-  transition: opacity .2s ease;
-  border-radius: 30px;
-  position: relative; }
-
-button.owl-next,
-button.owl-prev {
-  position: absolute;
-  bottom: 50%; }
-
-button.owl-prev {
-  left: 0px; }
-
-button.owl-next {
-  right: 0px; }
-
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #304659; }
-
-@media all and (max-width: 640px) {
-  .owl-dots {
-    margin-top: 30px; }
-  button.owl-next,
-  button.owl-prev {
-    position: absolute;
-    bottom: 0%; } }
-
 /*-- index-block2 --*/
 .w3l-index-block2 .s-block {
   box-shadow: -1px 2px 12px -9px rgba(0, 0, 0, 0.41);
@@ -10488,8 +10232,8 @@ button.owl-next {
   border: 1px solid #eee; }
 
 .w3l-index-block2 .s-block:hover {
-  box-shadow: -1px 2px 22px -9px rgba(0, 0, 0, 0.41);
-  transition: 0.3s ease-in; }
+  box-shadow: -1px 3px 22px -9px rgba(0, 0, 0, 0.41);
+  transition: 0.2s ease-in; }
 
 .w3l-index-block2 .s-block h3 {
   color: var(--title-color);
@@ -10638,6 +10382,11 @@ button.owl-next {
 
 .grids-4 .grids4-info img {
   border-radius: 4px 4px 0 0; }
+.grids-4 .grids4-info img:hover{
+  /* border:2px solid #7A8DAE;  */
+  transform: scale(0.9);
+  transition: 0.27s ease-in;
+}
 
 .grids-4 .grids4-info p {
   font-weight: normal;
@@ -14902,7 +14651,7 @@ small.text-3 {
     position: relative;
     display: grid;
     align-items: center;
-    min-height: 40em;
+    min-height: 100vh;
     z-index: 0;
     padding: 30px 0; }
   .w3l-forms-23 #forms23-block:before {
@@ -14945,6 +14694,9 @@ small.text-3 {
     background: #3b5998;
     color: var(--white-color); }
   .w3l-forms-23 ul.log-head li span.fa.fa-google-plus {
+    background: #D44638;
+    color: var(--white-color); }
+  .w3l-forms-23 ul.log-head li span.fa.fa-google {
     background: #D44638;
     color: var(--white-color); }
   .w3l-forms-23 ul.log-head li {
@@ -15109,7 +14861,8 @@ small.text-3 {
       margin-bottom: 10px; }
     .w3l-forms-23 .form23-text-top {
       grid-template-columns: 1fr;
-      grid-gap: 10px; } }
+      grid-gap: 10px; 
+    } }
 
 .bg_dark-light {
   background: #f8fbff; }

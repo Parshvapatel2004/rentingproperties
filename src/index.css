@@ -15,3 +15,63 @@ code {
 #link{
   text-decoration: none;
 }
+
+
+/* Specifications Section */
+.specifications {
+  background: #f8f9fa;
+  padding: 40px 10px;
+}
+
+/* Scrolling Container */
+.scrolling-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Scrolling Content */
+.scrolling-content {
+  display: flex;
+  gap: 50px;
+  animation: scroll 10s linear infinite;
+}
+
+.spec-box {
+  min-width: 250px;
+  background: white;
+  padding: 20px; 
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.spec-box h3 {
+  font-size: 28px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.spec-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Scrolling Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Pause Animation on Hover */
+.scrolling-container:hover .scrolling-content {
+  animation-play-state: paused;
+}
