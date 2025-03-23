@@ -50,7 +50,7 @@ const App = () => {
           <Route path="/manage_request" element={<ManageRequest />} />
           <Route path="/my_bookings" element={<MyBookings />} />
           <Route path="/booking" element={<Booking />} />
-          <Route path="/manage_property" element={<ManageProperty />} />
+          <Route path="/view_property" element={<ManageProperty />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

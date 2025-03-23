@@ -258,117 +258,111 @@ const Specification = () => {
           </div>
         </div>
       </section>
-      <hr className="opacity-25" />
+      {/* <hr className='opacity-25' /> */}
     </>
   );
 };
+
 const PropertyInfo = () => {
   const properties = [
     {
+      image: "assets/images/g12.jpg",
       title: "Luxury Apartment in Bandra",
       location: "Mumbai, Maharashtra, India",
       beds: 4,
       baths: 3,
-      area: "1800 sq ft",
-      image: "assets/images/g12.jpg",
-      link: "/properties_single",
+      size: "1800",
     },
     {
+      image: "assets/images/g11.jpg",
       title: "Spacious Villa in Whitefield",
       location: "Bangalore, Karnataka, India",
       beds: 3,
       baths: 2,
-      area: "2200 sq ft",
-      image: "assets/images/g11.jpg",
-      link: "/properties_single",
+      size: "2200",
     },
     {
+      image: "assets/images/g10.jpg",
       title: "Modern Flat in Connaught Place",
       location: "Delhi, India",
       beds: 2,
       baths: 2,
-      area: "1400 sq ft",
-      image: "assets/images/g10.jpg",
-      link: "/properties_single",
+      size: "1400",
     },
     {
+      image: "assets/images/g9.jpg",
       title: "Beachside Villa in ECR",
       location: "Chennai, Tamil Nadu, India",
       beds: 5,
       baths: 4,
-      area: "2500 sq ft",
-      image: "assets/images/g9.jpg",
-      link: "/properties_single",
+      size: "2500",
     },
     {
+      image: "assets/images/g8.jpg",
       title: "Heritage Home in Salt Lake",
       location: "Kolkata, West Bengal, India",
       beds: 3,
       baths: 2,
-      area: "1900 sq ft",
-      image: "assets/images/g8.jpg",
-      link: "/properties_single",
+      size: "1900",
     },
     {
+      image: "assets/images/g7.jpg",
       title: "Premium Bungalow in Jubilee Hills",
       location: "Hyderabad, Telangana, India",
       beds: 6,
       baths: 5,
-      area: "3000 sq ft",
-      image: "assets/images/g7.jpg",
-      link: "/properties_single",
+      size: "3000",
     },
   ];
   return (
-    <section className="grids-4">
-      <div id="grids4-block" className="py-5">
-        <div className="container py-md-3">
-          <div className="heading text-center mx-auto">
-            <h3 className="head">Recently Added Properties</h3>
-            <p className="my-3 head">
-              {" "}
-              Explore our latest listings of premium rental properties across
-              India, offering comfort and convenience.
-            </p>
-          </div>
-          <div className="row mt-5 pt-3">
-            {properties.map((property, index) => (
-              <div
-                key={index}
-                className="grids4-info col-lg-4 col-md-6 mt-md-0 mt-4"
-              >
-                <Link id="link" to={property.link}>
-                  <img
-                    src={property.image}
-                    className="img-fluid"
-                    alt={property.title}
-                  />
-                </Link>
-                <div className="info-bg">
-                  <h5>
-                    <Link id="link" to={property.link}>
-                      {property.title}
-                    </Link>
-                  </h5>
-                  <p>{property.location}</p>
-                  <ul>
-                    <li>
-                      <span className="fa fa-bed" /> {property.beds} Beds
-                    </li>
-                    <li>
-                      <span className="fa fa-bath" /> {property.baths} Baths
-                    </li>
-                    <li>
-                      <span className="fa fa-share-square-o" /> {property.area}
-                    </li>
-                  </ul>
+    <>
+      <section className="grids-4">
+        <div id="grids4-block" className="py-5">
+          <div className="container py-md-3">
+            <div className="heading text-center mx-auto">
+              <h3 className="head">Recently Added Properties</h3>
+              <p className="my-3 head">
+                Explore our latest listings of premium rental properties across
+                India, offering comfort and convenience.
+              </p>
+            </div>
+            <div className="row mt-5 pt-3">
+              {properties.map((property, index) => (
+                <div className="grids4-info col-lg-4 col-md-6 mt-4" key={index}>
+                  <Link id="link" to="/properties_single">
+                    <img
+                      src={property.image}
+                      className="img-fluid"
+                      alt={property.title}
+                    />
+                  </Link>
+                  <div className="info-bg">
+                    <h5>
+                      <Link id="link" to="/properties_single">
+                        {property.title}
+                      </Link>
+                    </h5>
+                    <p>{property.location}</p>
+                    <ul>
+                      <li>
+                        <span className="fa fa-bed" /> {property.beds} Beds
+                      </li>
+                      <li>
+                        <span className="fa fa-bath" /> {property.baths} Baths
+                      </li>
+                      <li>
+                        <span className="fa fa-share-square-o" />{" "}
+                        {property.size} sq ft
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

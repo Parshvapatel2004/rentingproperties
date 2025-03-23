@@ -27,10 +27,10 @@ function Main() {
             <div className="d-grid forms23-grids">
               <div className="form23">
                 <h6>Login with your account</h6>
-                <form action="#" method="GET">
+                <form action={"http://localhost:8000/login"} method="post">
                   <input
                     type="email"
-                    name="username"
+                    name="email"
                     placeholder="Email"
                     required="required"
                   />

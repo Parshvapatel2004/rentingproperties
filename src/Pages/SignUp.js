@@ -29,17 +29,34 @@ function Main() {
               <div className="form23">
                 <h6>Register a new account</h6>
 
-                <form action="#" method="GET">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    required="required"
-                  />
+                <form
+                  action={"http://localhost:8000/register_user"}
+                  method="post"
+                >
+                  <div className="d-flex gap-2">
+                    <input
+                      type="text"
+                      name="firstName"
+                      placeholder="First name"
+                      required="required"
+                    />
+                    <input
+                      type="text"
+                      name="lastName"
+                      placeholder="Last name"
+                      required="required"
+                    />
+                  </div>
                   <input
                     type="email"
                     name="email"
                     placeholder="Email"
+                    required="required"
+                  />
+                  <input
+                    type="tel"
+                    name="phoneNo"
+                    placeholder="Phone no"
                     required="required"
                   />
                   <input
