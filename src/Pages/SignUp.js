@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const SignUP = () => {
@@ -8,12 +8,17 @@ const SignUP = () => {
     </div>
   );
 };
+
 function Main() {
   const navigate = useNavigate();
-  const handleSignUp = () => {
-    alert("Register Successfully");
+  const [role, setRole] = useState("user");
+
+  const handleSignUp = (e) => {
+    e.preventDefault();
+    alert(`Registered Successfully as ${role}`);
     navigate("/login");
   };
+
   return (
     <div>
       <section className="w3l-forms-23">
@@ -24,11 +29,9 @@ function Main() {
                 <span>Renting </span>Properties
               </Link>
             </div>
-
             <div className="d-grid forms23-grids">
               <div className="form23">
                 <h6>Register a new account</h6>
-
                 <form
                   action={"http://localhost:8000/register_user"}
                   method="post"
@@ -38,38 +41,56 @@ function Main() {
                       type="text"
                       name="firstName"
                       placeholder="First name"
-                      required="required"
+                      required
                     />
                     <input
                       type="text"
                       name="lastName"
                       placeholder="Last name"
-                      required="required"
+                      required
                     />
                   </div>
                   <input
                     type="email"
                     name="email"
                     placeholder="Email"
-                    required="required"
+                    required
                   />
                   <input
                     type="tel"
                     name="phoneNo"
                     placeholder="Phone no"
-                    required="required"
+                    required
                   />
                   <input
                     type="password"
                     name="password"
                     placeholder="Password"
-                    required="required"
+                    required
                   />
+
+                  {/* Role Selection */}
+                  {/* <div className="d-flex  justify-content-center align-items-center  gap-2"> */}
+                  <label htmlFor="role" className=" fw-lighter mr-5 ml-2">
+                    Role:
+                  </label>
+                  <select
+                    name="role"
+                    className="w-50"
+                    value={role}
+                    onChange={(e) => setRole(e.target.value)}
+                    required
+                  >
+                    <option value="user">User</option>
+                    <option value="owner">Owner</option>
+                    {/* <option value="admin">Admin</option> */}
+                  </select>
+                  {/* </div> */}
+
                   <button type="submit" onClick={handleSignUp}>
                     Sign Up
                   </button>
                 </form>
-
                 <p className="text-center pt-2">
                   Already have an account?{" "}
                   <Link id="link" to="/login">
@@ -77,20 +98,6 @@ function Main() {
                   </Link>
                 </p>
               </div>
-              {/* <div className="frm-tp">
-                                <div className="form23-text">
-                                    <h6>Connect with</h6>
-                                    <div className="form23-text-top">
-                                        <Link id="link" to="/#google-plus" className='m-auto'>
-                                            <div className="signin google-plus">
-                                                <span className="fa fa-google" aria-hidden="true"></span>
-                                                <p className="action m-2">Google</p>
-                                            </div>
-                                        </Link>
-                                       
-                                    </div>
-                                </div>
-                            </div> */}
             </div>
           </div>
         </div>

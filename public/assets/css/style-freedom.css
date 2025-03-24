@@ -21335,7 +21335,8 @@ small.text-3 {
   .w3l-forms-23 .form23 form input[type="text"], 
   .w3l-forms-23 .form23 form input[type="email"], 
   .w3l-forms-23 .form23 form input[type="password"] ,
-  .w3l-forms-23 .form23 form input[type="tel"]
+  .w3l-forms-23 .form23 form input[type="tel"],
+  .w31-forms-23 .form-23 form select
   {
     appearance:none;
     font-style: normal;
